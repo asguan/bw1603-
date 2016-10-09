@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.rr {
+    width:100px;
+    height:100px;
+    background-color: aqua;
+    float: left;
+}
+.dd{
+    width:100px;
+    height:100px;
+    background-color: darkblue;
+    float: right;
+
+}
+
+.cc{
+    width:100px;
+    height:100px;
+    background-color: black;
+    float: right;
+}
+
+.jj{
+    clear: both;
+
+}
+
+
