@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            -webkit-font-smoothing:antialiased;
+            font-family:"微软雅黑";
+        }
+        .top{
+            height:50px;
+            background:url("images/images/lietoutubiao_02_03.png")no-repeat 165px 0 #303a40;
+            color:white;
+        }
+        .top h1{
+            float:left;
+            margin-left:200px;
+        }
+        .top p{
+            float:left;
+            margin-top:15px;
+            margin-left:55px;
+        }
+        .top span{
+            margin-right:75px;
+        }
+        .middle{
+            height:1950px;
+        }
+        .head{
+            height:240px;
+            background-color:#e9f1f4;
+            padding-left:195px;
+            padding-top:20px;
+        }
+        .eyes{
+            height:170px;
+            width:1198px;
+            background:url("images/juan.png") no-repeat 0 10px white;
+            padding-left:133px;
+            line-height:55px;
+        }
+        .eyes h1{
+            padding-left: 44px;
+        }
+        .eyes p{
+            padding-left:40px;
+        }
+        .eyes span{
+            margin-right:75px;
+        }
+        .eyes img{
+            position:relative;
+            top:10px;
+            left:0;
+        }
+        .eyes button{
+            background-color:#dbdbda;
+            color:white;
+            border:none;
+            border-radius:3px;
+            width:62px;
+            text-align: center;
+        }
+        .head .note{
+            display: inline-block;
+            padding:21px 0;
+            border-bottom:3px solid #fbb74c;
+            font-size:20px;
+        }
+        .content{
+            height:1715px;
+        }
+        .content .jieshao{
+            height:240px;
+            width:870px;
+            margin-left:195px;
+            margin-top:50px;
+            border-top:1px solid #e8e8e8;
+        }
+        .jieshao .js{
+            display:inline-block;
+            background-color:white;
+            position:relative;
+            bottom:15px;
+            left:-300px;
+            font-size:20px;
+            padding-right:20px;
+        }
+        .jieshao .img{
+            margin-top:35px;
+            float:left;
+        }
+        .jieshao .word{
+            text-indent:2em;
+            width:530px;
+            height:240px;
+            float:right;
+            line-height:30px;
+        }
+        .content .zhiwei{
+            width:870px;
+            margin-left:195px;
+            margin-top:35px;
+            border-top:1px solid #e8e8e8;
+        }
+        .zhiwei .zp{
+            display:inline-block;
+            background-color:white;
+            position:relative;
+            bottom:15px;
+            /*left:-300px;*/
+            font-size:20px;
+            padding-right:20px;
+        }
+        .zhiwei .zl{
+            height:85px;
+            width:870px;
+            border:1px solid #e8e8e8;
+            margin-top:10px;
+            line-height:40px;
+        }
+        .zl span{
+            padding:0 15px;
+            margin-right:-4px;
+        }
+        .zhiwei .xm{
+            height:85px;
+            width:870px;
+            border:1px solid #e8e8e8;
+            margin-top:10px;
+            border-left:3px solid #fbb74c!important;
+        }
+        .zhiwei .end{text-align: center;font-size:15px;margin-top:40px}
+        .end a{text-decoration:none;border:1px solid #f0f0f0;padding:5px 10px;margin:10px;color:#858289}
+        .end a:nth-child(2){background-color:#fbb74c;color:white}
+        .xm .xm1{
+            font-size:20px;
+            color:#fbb74c;
+            float:left;
+            margin:10px;
+        }
+        .xm .xm2{
+            color:#b8b8b8;
+            float:right;
+            margin:10px;
+        }
+        .xm .xm3{
+            float:left;
+            clear:both;
+            color:red;
+            margin:0 10px;
+
+        }
+        .xm .xm4{
+            float:left;
+            margin:0 10px;
+        }
+        .ceo{
+            width:290px;
+            height:1505px;
+            border-left:2px solid #f7f7f7;
+            position: absolute;
+            left:1115px;
+            top:340px;
+            padding:40px;
+        }
+        .ceo .team{
+            height:290px;
+            border-top:1px solid #e8e8e8;
+            border-bottom: 1px solid #e8e8e8;
+            margin-bottom:100px;
+        }
+        .team .team1{
+            display:inline-block;
+            background-color:white;
+            position:relative;
+            bottom:15px;
+            font-size:20px;
+            padding-right:20px;
+        }
+       .team img{
+           margin:20px 0 0 50px;
+       }
+        .team .name{
+            font-size:20px;
+            padding-left:90px;
+            padding-bottom:10px;
+        }
+        .team .value{
+            color:#a1a1a1;
+            padding-left:74px;
+        }
+        .team .change{
+            display:inline-block;
+            font-size:15px;
+            letter-spacing: 10px;
+            padding:0 10px;
+            position:relative;
+            top:35px;
+            left:66px;
+            background-color:white;
+        }
+        .change a{
+            font-size:20px;
+            color:#e5e5e5;
+            border:1px solid #e5e5e5;
+            text-decoration:none;
+            margin:10px;
+        }
+        .ceo .sign{
+            border-top:1px solid #e8e8e8;
+        }
+        .sign .sign1{
+            display:inline-block;
+            background-color:white;
+            position:relative;
+            bottom:15px;
+            font-size:20px;
+            padding-right:20px;
+        }
+        .sign p{
+            line-height:50px;
+        }
+        .sign .p1{margin-top:20px}
+        .p1 span{
+            padding:5px 10px;
+            margin-right:15px;
+            border:1px solid #e8e8e8;
+            border-radius:5px;
+        }
+        .p2 span{
+            padding:5px 10px;
+            margin-right:15px;
+            border:1px solid #e8e8e8;
+            border-radius:5px;
+        }
+        .ceo .load{
+            margin-top:40px;
+        }
+        .load ul{
+            display:inline-block;
+            line-height:42px;
+            list-style:none;
+        }
+        .bottom {
+            height:80px;
+            background-color: #f6f6f6;
+            padding-top:50px;
+            margin-top:100px;
+        }
+        .bottom p{
+            font-size:15px;
+            text-align: center;
+            color:#999999}
+
+    </style>
+</head>
+<body>
+        <div class="top">
+            <h1>IT人才热线</h1>
+            <p><span>首页</span><span>公司</span><span>我的简历</span></p>
+        </div>
+        <div class="middle">
+            <div class="head">
+                <div class="eyes">
+                <h1>卷皮</h1>
+                <button>取消关注</button>&nbsp;&nbsp;
+                <button style="background-color:#fbb74c">+加关注</button>
+                <p>
+                    <img src="images/images/bu_07.png" alt="">
+                    <span>电子商务</span>
+                    <img src="images/images/blun_07.png" alt="">
+                    <span>B轮</span>
+                    <img src="images/images/renshu_07.png" alt="">
+                    <span>500-2000人</span>
+                    <img src="images/images/dw_07.png" alt="">
+                    <span>深圳-福田区</span>
+                </p>
+                </div>
+                <span class="note">公司主页</span>
+            </div>
+
+            <div class="content">
+                <div class="jieshao">
+                    <span class="js">公司介绍</span>
+                    <div class="img"><img src="images/images/gsjs_12.png" alt=""></div>
+                    <p class="word">
+                        服务消费者日常生活所需的平价电子商务平台，专注为消费者提供物美价廉的商品和贴心无忧的购物体验。卷皮倡导价格与品质的平衡，主打平价、品质、生活，在国内电商行业中创新“平价零售”模式。为消费者提供服饰、居家、母婴等泛生活平价优质商品，致力于成为平价消费的行业领导者。
+                        卷皮通过场景化洞察消费者商品需求、以专业买手及质检团队保证商品精选优质、平台化规模实现平价惊喜折扣。在领先行...
+                    </p>
+                </div>
+                <div class="zhiwei">
+                <span class="zp">招聘职位</span>
+                    <div class="zl">
+                        <span>职位：</span><span style="background-color:#fbb74c ">全部</span><span>后端开发</span><span>移动开发</span><span>前端开发</span><span>测试</span><span>运维</span><span>DBA</span><span>高端职位</span><span>项目管理</span><span>硬件开发</span><span style="padding-left:75px;display: block">企业软件</span>
+                    </div>
+                    <div class="xm">
+                        <p class="xm1">PHP开发［深圳］</p>
+                        <p class="xm2">2015-09-22发布</p>
+                        <p class="xm3">8K-15K</p>
+                        <p class="xm4">经验3-5年/大专/全职</p>
+                    </div>
+                    <div class="xm">
+                        <p class="xm1">PHP开发［深圳］</p>
+                        <p class="xm2">2015-09-22发布</p>
+                        <p class="xm3">8K-15K</p>
+                        <p class="xm4">经验3-5年/大专/全职</p>
+                    </div>
+                    <div class="xm">
+                        <p class="xm1">PHP开发［深圳］</p>
+                        <p class="xm2">2015-09-22发布</p>
+                        <p class="xm3">8K-15K</p>
+                        <p class="xm4">经验3-5年/大专/全职</p>
+                    </div>
+                    <div class="xm">
+                        <p class="xm1">PHP开发［深圳］</p>
+                        <p class="xm2">2015-09-22发布</p>
+                        <p class="xm3">8K-15K</p>
+                        <p class="xm4">经验3-5年/大专/全职</p>
+                    </div>
+                    <div class="xm">
+                        <p class="xm1">PHP开发［深圳］</p>
+                        <p class="xm2">2015-09-22发布</p>
+                        <p class="xm3">8K-15K</p>
+                        <p class="xm4">经验3-5年/大专/全职</p>
+                    </div>
+                    <div class="xm">
+                        <p class="xm1">PHP开发［深圳］</p>
+                        <p class="xm2">2015-09-22发布</p>
+                        <p class="xm3">8K-15K</p>
+                        <p class="xm4">经验3-5年/大专/全职</p>
+                    </div>
+                    <div class="xm">
+                        <p class="xm1">PHP开发［深圳］</p>
+                        <p class="xm2">2015-09-22发布</p>
+                        <p class="xm3">8K-15K</p>
+                        <p class="xm4">经验3-5年/大专/全职</p>
+                    </div>
+                    <div class="xm">
+                        <p class="xm1">PHP开发［深圳］</p>
+                        <p class="xm2">2015-09-22发布</p>
+                        <p class="xm3">8K-15K</p>
+                        <p class="xm4">经验3-5年/大专/全职</p>
+                    </div>
+                    <div class="xm">
+                        <p class="xm1">PHP开发［深圳］</p>
+                        <p class="xm2">2015-09-22发布</p>
+                        <p class="xm3">8K-15K</p>
+                        <p class="xm4">经验3-5年/大专/全职</p>
+                    </div>
+                    <div class="xm">
+                        <p class="xm1">PHP开发［深圳］</p>
+                        <p class="xm2">2015-09-22发布</p>
+                        <p class="xm3">8K-15K</p>
+                        <p class="xm4">经验3-5年/大专/全职</p>
+                    </div>
+                    <div class="xm">
+                        <p class="xm1">PHP开发［深圳］</p>
+                        <p class="xm2">2015-09-22发布</p>
+                        <p class="xm3">8K-15K</p>
+                        <p class="xm4">经验3-5年/大专/全职</p>
+                    </div>
+                    <div class="xm">
+                        <p class="xm1">PHP开发［深圳］</p>
+                        <p class="xm2">2015-09-22发布</p>
+                        <p class="xm3">8K-15K</p>
+                        <p class="xm4">经验3-5年/大专/全职</p>
+                    </div>
+                    <p class="end"><a href="">上一页</a><a href="">1</a><a href="">2</a><a href="">3</a><a href="">…</a><a href="">6</a><a
+                            href="">下一页</a></p>
+                </div>
+            </div>
+            <div class="ceo">
+                <div class="team">
+                    <span class="team1">管理团队</span>
+                    <img src="images/images/ceo_15.png" alt="">
+                    <p class="name">黄承松</p>
+                    <p class="value">创始人兼CEO</p>
+                    <span class="change">
+                        <a href="#">&lt;</a><a href="#">&gt;</a>
+                    </span>
+                </div>
+                <div class="sign">
+                    <span class="sign1">公司标签</span>
+                    <p class="p1"><span>绩效奖金</span><span>定期体检</span><span>五险一金</span></p>
+                    <p class="p2"><span>岗位晋升</span><span>绩效奖金</span><span>年度旅游</span></p>
+                </div>
+                <div class="load">
+                    <img src="images/images/kuang_03.png" alt="">
+                    <ul>
+                        <li>公司介绍</li>
+                        <li>发展历程</li>
+                        <li>招聘岗位</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <p class="b1">网站备案号：粤ICP备 11089314 经营许可证：粤ICP备 11089314</p>
+        </div>
+</body>
+</html>
