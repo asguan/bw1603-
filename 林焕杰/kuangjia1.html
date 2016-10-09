@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>框架</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .top{
+            height:50px;
+            background:url("images/logo_03.png") no-repeat 360px 3px #303a40;
+        }
+        .daohangl{
+            margin-left:600px;
+            position:relative;
+            top:13px;
+        }
+        .daohangl li{
+            list-style:none;
+            float:left;
+            color:white;
+        }
+        .daohangl li:nth-child(2){
+            margin:0 40px;
+        }
+        .daohangr{
+            color:white;
+            float:right;
+            margin-right:360px;
+            margin-top:13px;
+        }
+        .middle{
+            height:1950px;
+            border:1px solid red;
+        }
+        .fmiddle{
+            height:240px;
+            border:1px solid red;
+            background:#e9f1f4;
+        }
+        .mdbox{
+            width:1210px;
+            height:170px;
+            border:1px solid red;
+            margin:20px auto;
+        }
+        .mdboxl{
+            height:170px;
+            width:170px;
+            border:1px solid red;
+            float:left;
+        }
+        .mdboxr{
+            height:170px;
+            width:1033px;
+            border:1px solid blue;
+            float:right;
+        }
+        .tmiddle{
+            height:1530px;
+            width:1220px;
+            border:1px solid white;
+            margin:30px auto;
+        }
+        .left{
+            width:915px;
+            height:1500px;
+            float:left;
+            border-right:1px solid red;
+        }
+        .mlbox{
+            width:872px;
+            height:288px;
+            border:1px solid red;
+        }
+        .zpzw{
+            padding-top:10px;
+            font-size:18px;
+            font-weight:bold;
+        }
+        .henggang{
+            width:780px;
+            border-bottom:1px solid #e8e8e8;
+            margin-left:90px;
+            position:relative;
+            top:-12px;
+        }
+        .zwlb1{
+            height:86px;
+            width:870px;
+            border:1px solid #e8e8e8;
+            margin-top:20px;
+        }
+        .zwxx li{
+            list-style:none;
+            margin-left:20px;
+            font-size:14px;
+        }
+        .zwxx li:first-child{
+            border:1px solid #fbb74c;
+            height:20px;
+            width:41px;
+            padding-left:9px;
+            padding-top:4px;
+            background:#fbb74c;
+            color:white;
+        }
+        .zwml{
+            height:71px;
+            width:55px;
+            float:left;
+            padding-left:20px;
+            padding-top:15px;
+        }
+        .zwxx li{
+            display:inline-block;
+            margin-top:15px;
+        }
+        .zwbox{
+            width:870px;
+            height:85px;
+            border:1px solid #e8e8e8;
+            margin-top:20px;
+        }
+        .zhiwei{
+            width:220px;
+            height:85px;
+            float:left;
+            /*margin-top:16px;*/
+            border-left:3px solid #fbb74c;
+            padding-left:15px;
+        }
+        .zhiwei p:first-child{
+            font-size:18px;
+            font-weight:bold;
+            color:#fbb74c;
+            margin-top:16px;
+        }
+        .zhiwei p:nth-child(2){
+            font-size:15px;
+            font-weight:bold;
+            margin-top:16px;
+        }
+        .fabu{
+            width:140px;
+            height:67px;
+            float:right;
+            margin-top:20px;
+        }
+        .fabu p{
+            font-size:15px;
+            color:#a9a9a9;
+            font-weight:bold;
+        }
+        .yeshu{
+            text-align:center;
+            margin-top:40px;
+
+        }
+        .yeshu a{
+            border:1px solid #f0f0f0;
+            color:#dcdcdb;
+            padding:2px 7px;
+            text-decoration:none;
+        }
+        .yeshu a:nth-child(2){
+            background:#fbb74c;
+            color:white;
+        }
+        .yeshu a:nth-child(5){
+            border:none;
+        }
+        .right{
+            width:290px;
+            height:1530px;
+            border:1px solid blue;
+            float:right;
+        }
+        .bottom{
+            height:80px;
+            border:1px solid red;
+            background:#f6f6f6;
+        }
+    </style>
+</head>
+<body>
+<div class="top">
+    <div class="daohangl">
+        <ul>
+            <li>首页</li>
+            <li>公司</li>
+            <li>我的简历</li>
+        </ul>
+    </div>
+    <div class="daohangr">
+        <p>登录|注册</p>
+    </div>
+</div>
+<div class="middle">
+    <div class="fmiddle">
+        <div class="mdbox">
+            <div class="mdboxl"></div>
+            <div class="mdboxr"></div>
+        </div>
+    </div>
+    <div class="tmiddle">
+        <div class="left">
+            <div class="mleft">
+                <div class="mlbox">
+                </div>
+                <div class="zwlb">
+                    <div class="zpzw">
+                        <p>招聘职位</p>
+                        <div class="henggang"></div>
+                    </div>
+                    <div class="zwlb1">
+                        <div class="zwml">
+                            <p>职位:</p>
+                        </div>
+                        <div class="zwxx">
+                            <ul>
+                                <li>全部</li>
+                                <li>后端开发</li>
+                                <li>移动开发</li>
+                                <li>前端开发</li>
+                                <li>测试</li>
+                                <li>运维</li>
+                                <li>DBA</li>
+                                <li>高端职业</li>
+                                <li>项目管理</li>
+                                <li>硬件开发</li>
+                                <li>企业软件</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="zwbox">
+                        <div class="zhiwei">
+                            <p>PHP开发[深圳]</p>
+                            <p>8k-15k&nbsp; <span>经验3-5年/大专/全职</span></p>
+                        </div>
+                        <div class="fabu">
+                            <p>2015-09-22 发布</p>
+                        </div>
+                    </div>
+                    <div class="zwbox">
+                        <div class="zhiwei">
+                            <p>PHP开发[深圳]</p>
+                            <p>8k-15k&nbsp; <span>经验3-5年/大专/全职</span></p>
+                        </div>
+                        <div class="fabu">
+                            <p>2015-09-22 发布</p>
+                        </div>
+                    </div>
+                    <div class="zwbox">
+                        <div class="zhiwei">
+                            <p>PHP开发[深圳]</p>
+                            <p>8k-15k&nbsp; <span>经验3-5年/大专/全职</span></p>
+                        </div>
+                        <div class="fabu">
+                            <p>2015-09-22 发布</p>
+                        </div>
+                    </div>
+                    <div class="zwbox">
+                        <div class="zhiwei">
+                            <p>PHP开发[深圳]</p>
+                            <p>8k-15k&nbsp; <span>经验3-5年/大专/全职</span></p>
+                        </div>
+                        <div class="fabu">
+                            <p>2015-09-22 发布</p>
+                        </div>
+                    </div>
+                    <div class="zwbox">
+                        <div class="zhiwei">
+                            <p>PHP开发[深圳]</p>
+                            <p>8k-15k&nbsp; <span>经验3-5年/大专/全职</span></p>
+                        </div>
+                        <div class="fabu">
+                            <p>2015-09-22 发布</p>
+                        </div>
+                    </div>
+                    <div class="zwbox">
+                        <div class="zhiwei">
+                            <p>PHP开发[深圳]</p>
+                            <p>8k-15k&nbsp; <span>经验3-5年/大专/全职</span></p>
+                        </div>
+                        <div class="fabu">
+                            <p>2015-09-22 发布</p>
+                        </div>
+                    </div>
+                    <div class="zwbox">
+                        <div class="zhiwei">
+                            <p>PHP开发[深圳]</p>
+                            <p>8k-15k&nbsp; <span>经验3-5年/大专/全职</span></p>
+                        </div>
+                        <div class="fabu">
+                            <p>2015-09-22 发布</p>
+                        </div>
+                    </div>
+                    <div class="zwbox">
+                        <div class="zhiwei">
+                            <p>PHP开发[深圳]</p>
+                            <p>8k-15k&nbsp; <span>经验3-5年/大专/全职</span></p>
+                        </div>
+                        <div class="fabu">
+                            <p>2015-09-22 发布</p>
+                        </div>
+                    </div>
+                    <div class="zwbox">
+                        <div class="zhiwei">
+                            <p>PHP开发[深圳]</p>
+                            <p>8k-15k&nbsp; <span>经验3-5年/大专/全职</span></p>
+                        </div>
+                        <div class="fabu">
+                            <p>2015-09-22 发布</p>
+                        </div>
+                    </div>
+                    <div class="zwbox">
+                        <div class="zhiwei">
+                            <p>PHP开发[深圳]</p>
+                            <p>8k-15k&nbsp; <span>经验3-5年/大专/全职</span></p>
+                        </div>
+                        <div class="fabu">
+                            <p>2015-09-22 发布</p>
+                        </div>
+                    </div>
+                    <div class="yeshu">
+                        <a href="">上一页</a>
+                        <a href="">1</a>
+                        <a href="">2</a>
+                        <a href="">3</a>
+                        <a href="">...</a>
+                        <a href="">6</a>
+                        <a href="">下一页</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right"></div>
+    </div>
+</div>
+<div class="bottom"></div>
+</body>
+</html>
