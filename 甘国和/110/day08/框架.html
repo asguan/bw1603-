@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>框架 与 浮动</title>
+    <style>
+        *{
+            padding:0px;
+            margin:0;
+        }
+        .top{
+            height: 50px;
+            border-bottom:1px solid red;
+
+        }
+        .middle{
+            height: 980px;
+            /*background-color:gold;*/
+
+        }
+        .left{
+            width: 200px;
+            height: 800px;
+            border: 1px solid gold;
+            position: absolute;
+            top: 60px;
+            left: 50px;
+
+        }
+        .right{
+            width: 800px;
+            height: 900px;
+            background-color: yellow;
+            position: relative;
+            top: 10px;
+            left: 500px;
+        }
+        .bottom{
+            height: 200px;
+            background-color: antiquewhite;
+        }
+        .d1{
+            width: 1050px;
+            height: 60px;
+            margin:0 auto;
+        }
+        .d2{
+            float:left;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+     <div class="top">
+         高大师
+     </div>
+
+     <div class="middle">
+
+             <div class="left">
+
+             </div>
+             <div class="right">
+
+             </div>
+
+     </div>
+
+     <div class="bottom">
+         <div class="d1">
+             <div class="d2">
+                 <img src="./images/宜信.png" alt="">
+             </div>
+             <div class="d2">
+                 <img src="./images/东风.png" alt="">
+             </div>
+             <div class="d2">
+                 <img src="./images/高薪.png" alt="">
+             </div>
+         </div>
+         <div class="d1">
+             <div class="d2">
+                 <img src="./images/邮政.png" alt="">
+             </div>
+             <div class="d2">
+                 <img src="./images/紫金.png" alt="">
+             </div>
+             <div class="d2">
+                 <img src="./images/移动.png" alt="">
+             </div>
+         </div>
+     </div>
+
+
+
+</body>
+</html>
