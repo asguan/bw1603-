@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人主页_修改密码</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        body{
+            overflow-x:hidden;
+            position:relative;
+            left:-250px;
+        }
+        .top{
+            width: 1920px;
+            height: 50px;
+            background:url("img/it_02.png") no-repeat 19% 100% #303a40;
+        }
+        .t1{
+            font-size:24px;
+            color:white;
+            margin-left:395px;
+            position:relative;
+            top:8px;
+            float:left;
+        }
+        ul li{
+            list-style:none;
+            font-size:16px;
+            float:left;
+            margin-left:65px;
+            margin-top:14px;
+        }
+        a{
+            color:#c4c5c5;
+            text-decoration:none;
+        }
+        .s1{
+            border:0px;
+            height: 40px;
+            width: 115px;
+            background-color:#303a40;
+            color:white;
+            margin-left:1450px;
+            position:relative;
+            top:-30px;
+        }
+        .middle{
+            width: 1920px;
+            height: 830px;
+            margin-top:20px;
+            margin-left:360px;
+        }
+        .left{
+            width: 200px;
+            height: 820px;
+            border:1px solid lightgray;
+            float:left;
+        }
+        .photo1{
+            height: 40px;
+            vertical-align:-15px;
+            margin-left:-30px;
+        }
+        .mid1{
+            height: 40px;
+            text-align:center;
+            background-color:#fafafa;
+        }
+        .mid2{
+            height: 55px;
+            text-align:center;
+            position:relative;
+            top:16px;
+            font-size:20px;
+        }
+        .mid3{
+            width: 200px;
+            height: 40px;
+            font-size:15px;
+            margin-top:-1px;
+            line-height:42px;
+            margin-left:0px;
+            text-indent:32px;
+        }
+        .mid3 a{
+            color:black;
+        }
+        .mid3:hover{
+            background-color:#fbb74c;
+            cursor:pointer;
+        }
+        .right {
+            width: 980px;
+            height: 820px;
+            border: 1px solid lightgray;
+            float:left;
+            margin-left:20px;
+        }
+        .mid5{
+            height: 50px;
+            font-weight:bolder;
+            font-size:14px;
+            position:relative;
+            top:20px;
+            left:10px;
+        }
+        .line1{
+            border:1px solid orangered;
+            width: 80px;
+            margin-left:10px;
+        }
+        .line2{
+            width: 950px;
+            margin-left:10px;
+            border:1px solid lightgray;
+        }
+        .rbox1{
+            margin-top:30px;
+            text-align:right;
+            line-height:50px;
+            margin-right:700px;
+        }
+        .rbox1 input{
+            border:none;
+            height: 30px;
+            padding-left:15px;
+        }
+        .reset{
+            width: 80px;
+            background-color:#4cbefa;
+            color:white;
+            position:relative;
+            left:-60px;
+            top:10px;
+            cursor:pointer;
+        }
+        .botton{
+            width: 1920px;
+            height: 202px;
+            background-color:#303a40;
+            margin-top:20px;
+        }
+        .b1{
+            color:white;
+            font-size:14px;
+            text-align:center;
+            position:relative;
+            top:70px;
+            line-height:40px;
+        }
+    </style>
+</head>
+<body>
+<div class="top">
+    <span class="t1">
+        IT人才热线
+    </span>
+    <ul>
+        <li>
+            <a href="#">首页</a>
+        </li>
+        <li>
+            <a href="#">公司</a>
+        </li>
+        <li>
+            <a href="#">我的简历</a>
+        </li>
+    </ul>
+    <span class="t2">
+        <select id="" class="s1">
+            <option value="">13590458...</option>
+            <option value="">我的简历</option>
+            <option value="">我的面试</option>
+            <option value="">收到的消息</option>
+            <option value="">修改密码</option>
+            <option value="">关注的企业</option>
+            <option value="">收藏的职位</option>
+            <option value="">退出</option>
+        </select>
+    </span>
+</div>
+<div class="middle">
+    <div class="left">
+        <p class="mid1">
+            <img src="img/tupiao.png" class="photo1">
+            个人中心</p>
+        <hr style="border:1px solid lightgray">
+        <p class="mid2">1359***3285</p>
+        <hr style="border:1px solid lightgray">
+        <ul class="rul1">
+            <li class="mid3">
+                <a href="mianshi.html">我的面试</a>
+            </li>
+            <li class="mid3">
+                <a href="jianli.html">我的简历</a>
+            </li>
+            <li class="mid3">
+                <a href="xiaoxi.html">收到的消息</a>
+            </li>
+            <li class="mid3" style="background-color:#fbb74c;">
+                <a href="mima.html">修改密码</a>
+            </li>
+            <li class="mid3">
+                <a href="qiye.html">关注的企业</a>
+            </li>
+            <li class="mid3">
+                <a href="work.html">收藏的职业</a>
+            </li>
+        </ul>
+    </div>
+    <div class="right">
+        <p class="mid5">
+            修改密码
+        </p>
+        <hr class="line1"><hr class="line2">
+        <div class="rbox1">
+            <p>手机号
+                <input type="text" value="" placeholder="请输入您的手机号码" maxlength="11"></p>
+            <p>当前密码
+                <input type="text" value="" placeholder="请输入您的当前密码"></p>
+            <p>新密码
+                <input type="text" value="" placeholder="请输入您的新密码"></p>
+            <p>确认密码
+                <input type="text" value="" placeholder="请输入您的新密码"></p>
+            <input type="reset" value="提交" class="reset">
+        </div>
+    </div>
+</div>
+<div class="botton">
+    <div class="b1">
+        网站备案号：粵ICP备 11089314 经营许可证：粵ICP备 11089314
+        <br>
+        All Rights Reserved.
+    </div>
+</div>
+</body>
+</html>

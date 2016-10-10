@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" overflow="hidden">
+<head>
+    <meta charset="UTF-8">
+    <title>企业_求职登录</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        body{
+            overflow-x:hidden;
+            position:relative;
+            left: -150px;
+        }
+        .top{
+            width: 1920px;
+            height: 50px;
+            background:url("img/it_02.png") no-repeat 19% 100% #303a40;
+        }
+        .t1{
+            font-size:24px;
+            color:white;
+            margin-left:395px;
+            position:relative;
+            top:8px;
+            float:left;
+        }
+        ul li{
+            list-style:none;
+            font-size:16px;
+            float:left;
+            margin-left:65px;
+            margin-top:14px;
+        }
+        a{
+            color:#c4c5c5;
+            text-decoration:none;
+        }
+        .ttxt1{
+            color:#c4c5c5;
+            font-size:14px;
+            margin-top:14px;
+            float:right;
+            margin-right:330px;
+        }
+        .middle{
+            width: 1920px;
+            height: 830px;
+            /*background:url(img/bg.png)no-repeat;*/
+        }
+        .photo1{
+            width: 1920px;
+            height: 850px;
+            margin: 0px;
+            padding:0px;
+            display:block;
+        }
+        .mbox1{
+            width: 396px;
+            height: 460px;
+            position:absolute;
+            top:280px;
+            left:1162px;
+            padding-left:32px;
+            padding-top:-300px;
+            line-height:67px;
+        }
+        .mbox2{
+            width: 396px;
+            height: 460px;
+            position:absolute;
+            top:280px;
+            left:1162px;
+            padding-left:32px;
+            padding-top:20px;
+            line-height:40px;
+            background-color:#f7fafb;
+            opacity:0.6;
+        }
+        .mtx1{
+            color:#3b96e7;
+            font-size:25px;
+        }
+        #hr{
+            width: 160px;
+            height: 40px;
+            border:1px solid black;
+            text-align:center;
+            margin-top:10px;
+            line-height:40px;
+            cursor:pointer;
+            float:left;
+        }
+        #work{
+            border:1px solid black;
+            width: 160px;
+            height: 40px;
+            text-align:center;
+            margin-top:10px;
+            line-height:40px;
+            cursor:pointer;
+            float:right;
+            margin-right:43px;
+        }
+        .minput1{
+            width: 320px;
+            height: 40px;
+            padding-left:30px;
+        }
+        .minput2{
+            width: 95px;
+            height: 40px;
+            padding-left:30px;
+        }
+        .photo2{
+            position:relative;
+            top:13px;
+            height: 35px;
+        }
+        .mbtn1{
+            width: 350px;
+            height: 40px;
+            background-color:orange;
+            border:none;
+            cursor:pointer;
+            outline:none;
+            font-size:18px;
+            color:white;
+        }
+        .mtx2{
+            text-align:center;
+            font-weight:bolder;
+            font-size:16px;
+        }
+        .botton{
+            width: 1920px;
+            height: 202px;
+            background-color:#303a40;
+            margin-top:20px;
+        }
+        .b1{
+            color:white;
+            font-size:14px;
+            text-align:center;
+            position:relative;
+            top:70px;
+            line-height:40px;
+        }
+        .box{
+            width: 110px;
+            height: 30px;
+            background:url(img/photo2.png) no-repeat 100% 1% white;
+            border:1px solid blue;
+        }
+        .box1{
+            width: 110px;
+            height: 30px;
+            /*background:url(img/photo2.png) no-repeat 100% 1% white;*/
+            /*border:1px solid blue;*/
+        }
+    </style>
+    <script>
+        //        function chose1() {
+        //           var x=document.getElementById("hr");
+        //            x.className="box";
+        //        }
+        //        function chose2() {
+        //            var y=document.getElementById("work");
+        //            y.className="box";
+        //        }
+        window.onload=function(){
+            var hr=document.getElementById("hr");
+            var work=document.getElementById("work");
+            hr.onclick=function(){
+                hr.style.border="1px solid blue";
+                hr.style.background="url('img/photo2.png') no-repeat 100% 1% white";
+                work.style="none";
+            }
+            work.onclick=function(){
+                work.style.border="1px solid blue";
+                work.style.background="url('img/photo2.png') no-repeat 100% 1% white";
+                hr.style="none";
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="top">
+    <span class="t1">
+        IT人才热线
+    </span>
+    <ul>
+        <li>
+            <a href="#">首页</a>
+        </li>
+        <li>
+            <a href="#">公司</a>
+        </li>
+        <li>
+            <a href="#">我的简历</a>
+        </li>
+    </ul>
+    <span class="ttxt1">企业HR|求职者</span>
+</div>
+<div class="middle">
+    <img src="img/bg.png" alt="" class="photo1">
+    <div class="mbox2">
+    </div>
+    <div class="mbox1">
+        <a class=mtx1>欢迎登录</a>
+        <hr style="width: 175px;border:1px solid #3b96e7;margin-top:-10px;">
+        <hr style="width: 350px;border:1px solid #3b96e7;">
+        <div  id="hr" onclick="chose1()">企业HR</div>
+        <div  id="work" onclick="chose2()">求职者</div>
+        <p>
+            <input type="text" value="" placeholder="手机号" class="minput1">
+        </p>
+        <p>
+            <input type="password" value="" placeholder="密码" class="minput1">
+        <p>
+            <input type="text" value="" class="minput2">
+            <img src="img/yanzhengma_03.png" alt="" class="photo2">
+        <span style="font-size:14px;">看你不清楚？
+            <a style="cursor:pointer;">换一张</a></span>
+        </p>
+        <p>
+            <button class="mbtn1">登录</button>
+        </p>
+        <p class="mtx2">
+            没有帐号？<span style="color:#3b96e7;cursor:pointer;">马上注册</span>
+        </p>
+    </div>
+</div>
+<div class="botton">
+    <div class="b1">
+        网站备案号：粵ICP备 11089314 经营许可证：粵ICP备 11089314
+        <br>
+        All Rights Reserved.
+    </div>
+</div>
+</body>
+</html>

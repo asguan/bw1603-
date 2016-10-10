@@ -1,0 +1,160 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    overflow-x:hidden;
+    position:relative;
+    left:-250px;
+}
+.top{
+    width: 1920px;
+    height: 50px;
+    background:url("../img/it_02.png") no-repeat 19% 100% #303a40;
+}
+.t1{
+    font-size:24px;
+    color:white;
+    margin-left:395px;
+    position:relative;
+    top:8px;
+    float:left;
+}
+ul li{
+    list-style:none;
+    font-size:16px;
+    float:left;
+    margin-left:65px;
+    margin-top:14px;
+}
+a{
+    color:#c4c5c5;
+    text-decoration:none;
+}
+.s1{
+    border:0px;
+    height: 40px;
+    width: 115px;
+    background-color:#303a40;
+    color:white;
+    margin-left:1450px;
+    position:relative;
+    top:-30px;
+}
+.middle{
+    width: 1920px;
+    height: 830px;
+    margin-top:20px;
+    margin-left:360px;
+}
+.left{
+    width: 200px;
+    height: 820px;
+    border:1px solid lightgray;
+    float:left;
+}
+.photo1{
+    height: 40px;
+    vertical-align:-15px;
+    margin-left:-30px;
+}
+.mid1{
+    height: 40px;
+    text-align:center;
+    background-color:#fafafa;
+}
+.mid2{
+    height: 55px;
+    text-align:center;
+    position:relative;
+    top:16px;
+    font-size:20px;
+}
+.mid3{
+    width: 200px;
+    height: 40px;
+    font-size:15px;
+    margin-top:-1px;
+    line-height:42px;
+    margin-left:0px;
+    text-indent:32px;
+}
+.mid3 a{
+    color:black;
+}
+.mid3:hover{
+    background-color:#fbb74c;
+    cursor:pointer;
+}
+.right {
+    width: 980px;
+    height: 820px;
+    border: 1px solid lightgray;
+    float:left;
+    margin-left:20px;
+}
+.mid5{
+    height: 50px;
+    font-weight:bolder;
+    font-size:14px;
+    position:relative;
+    top:20px;
+    left:10px;
+}
+.line1{
+    border:1px solid orangered;
+    width: 80px;
+    margin-left:10px;
+}
+.line2{
+    width: 950px;
+    margin-left:10px;
+    border:1px solid lightgray;
+}
+.photo2{
+    margin-top:10px;
+    margin-left:15px;
+    float:left;
+}
+.mid6{
+    margin-top:10px;
+    margin-left:30px;
+    line-height:35px;
+    color:gray;
+    float:left;
+    font-weight:bolder;
+}
+.mid7{
+    margin-right:30px;
+    line-height:60px;
+    font-size:14px;
+    color:gray;
+    float:right;
+}
+.mid8{
+    margin-left:350px;
+    margin-top:140px;
+}
+.button1{
+    border:none;
+}
+.line3{
+    clear:both;
+    width: 950px;
+    border:1px dashed lightgray;
+    margin-left:10px;
+}
+.botton{
+    width: 1920px;
+    height: 202px;
+    background-color:#303a40;
+    margin-top:20px;
+}
+.b1{
+    color:white;
+    font-size:14px;
+    text-align:center;
+    position:relative;
+    top:80px;
+    line-height:10px;
+}
