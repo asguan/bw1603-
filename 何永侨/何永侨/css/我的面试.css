@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.top{
+    height: 50px;
+    background-color: #303a40;
+}
+.d2{
+    width: 1200px;
+    height: 50px;
+    /*border:1px solid red;*/
+    margin:0 200px;
+}
+.i1{
+    font-size:35px;
+    color:white;
+    font-family:"楷体";
+}
+.i2{
+    color:#cccccc;
+    padding-left:70px;
+    list-style: none;
+    line-height: 50px;
+}
+.i3{
+    color:white;
+    border:none;
+    float:right;
+    position: relative;
+    top:20px;
+    left: 0px;
+    background-color: #303a40;
+}
+.middle{
+    height: 830px;
+}
+.d1{
+    width: 1200px;
+    height: 790px;
+    /*border:1px solid #eaebec;*/
+    margin:0 auto;
+    position:relative;
+    top:20px;
+    left:0px;
+}
+.left{
+    width: 200px;
+    height: 790px;
+    border:1px solid #eaebec;
+    float:left;
+}
+.left a{
+    text-decoration:none;
+    color:black;
+}
+a:hover{
+    color:white;
+}
+ul .t3:hover{
+    background-color: #fbb74c;
+    color:white;
+}
+ul li{
+    list-style: none;
+    /*text-align: left;*/
+    /*text-indent: 3em;*/
+    vertical-align: middle;
+}
+.t1{
+    text-indent: 3em;
+    width: 200px;
+    height: 40px;
+    line-height:40px;
+    font-size:20px;
+    font-weight: bold;
+    border-bottom:1px solid #eaebec;
+    background:url(../img/收藏的职位_03.png) no-repeat 10% 50%;
+}
+.t2{
+    text-indent: 3em;
+    width: 200px;
+    height: 56px;
+    font-size:18px;
+    font-weight: bold;
+    line-height: 56px;
+    border-bottom:1px solid #eaebec;
+}
+.t3{
+    text-indent: 3em;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+}
+/*.t4{*/
+    /*text-indent: 3em;*/
+    /*width: 200px;*/
+    /*height: 40px;*/
+    /*color:white;*/
+    /*line-height: 40px;*/
+    /*background-color:#fbb74c;*/
+/*}*/
+.right{
+    width: 980px;
+    height: 790px;
+    border:1px solid #eaebec;
+    float:right;
+}
+span{
+     color:red;
+ }
+.r1{
+    width: 940px;
+    height: 50px;
+    margin:0 auto;
+    border-bottom:1px solid #eaebec;
+}
+.ri1{
+    width: 80px;
+    height: 26px;
+    padding-top:24px;
+    border-bottom:1px solid #ff9900;
+    font-weight:bold;
+    font-size:15px;
+}
+.r2{
+    width: 940px;
+    height: 228px;
+    margin:0 auto;
+    border-bottom:1px dashed #eaebec;
+}
+.r3,.r4{
+    width: 940px;
+    height: 194px;
+    margin:0 auto;
+    border-bottom:1px dashed #eaebec;
+}
+tr td{
+    text-align: center;
+    padding-top:15px;
+    padding-left:75px;
+    font-size:15px;
+}
+.r5{
+    text-align: center;
+    padding-top: 38px;
+}
+.r5 a{
+    text-decoration: none;
+    border: 1px solid #f0f0f0;
+    padding: 3px 4px;
+    font-size: 12px;
+    color: #9f9f9d;
+}
+.r5 a:nth-child(2){
+    background-color: #fbb74c;
+    color: white;
+}
+.r5 a:nth-child(5){
+    border: none;
+    position: relative;
+    top: -2px;
+    left: 0px;
+}
+.bottom{
+    height: 200px;
+    background-color: #303a40;
+}
+.bottom .b1{
+    color:white;
+    font-size:15px;
+    text-align: center;
+    padding-top:70px;
+}
