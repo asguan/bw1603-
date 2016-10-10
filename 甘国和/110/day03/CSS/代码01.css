@@ -1,0 +1,19 @@
+div{
+    height: 200px;
+    background-color:rgb(44, 103, 135);
+    background-repeat:no-repeat;
+    background-image: url(.././火狐.png);
+    background-position:20% 0%;
+    font-size: 12px;
+    text-align:center;
+    color:white;
+
+}
+.dd{
+    background-image: url(.././警徽.png);
+    background-repeat:no-repeat;
+    background-position:43% 0%
+}
+p{
+    line-height:20px;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS小练习</title>
+     <!--第三种方式 这是外部-->
+    <link rel="stylesheet" href="CSS/csslianxi.css">
+    <style>
+        /*这是第二种方式 这是内部*/
+        span{
+            font-size: 20px;
+            font-weight:bolder;
+        }
+    </style>
+</head>
+
+
+<body>
+     <!--CSS的优先级 内联>内部>外部-->
+     <!--CSS的第一种方式  这是内联-->
+  <p style="font-size: 30px; color:red; ">CSS的第一种方法</p>
+  <span> CSS的第二种方法</span>
+   <div>CSS的第三种方法</div>
+</body>
+</html>
