@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的面试</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        a{
+            text-decoration:none;
+        }
+        .top{
+            height: 50px;
+            background:url(117.png) no-repeat 3% 10% #303a40;
+        }
+        .middle{
+            height: 830px;
+        }
+        .middle .left {
+            width: 204px;
+            height: 794px;
+            border: 1px solid #eaebec;
+            /*浮动*/
+            float: left;
+        }
+        .middle .right{
+            width: 980px;
+            height: 794px;
+            border: 1px solid #eaebec;
+            /*浮动*/
+            float: right;
+        }
+        .middle .baoguo{
+            width: 1200px;
+            height: 790px;
+
+            /*水平居中*/
+            margin: 0 auto;
+            /*相对定位*/
+            position: relative;
+            top: 20px;
+            left: 0;
+        }
+        .bottom{
+            height: 194px;
+            background-color: #091c30;
+            text-align:center;
+            color:white;
+            font-size:10px;
+        }
+        .a{
+            position:relative;
+            top:80px;
+        }
+        /*顶部样式*/
+        .top div{
+            color:white;
+            line-height:50px;
+            padding-left:18px;
+            position:relative;
+            left:235px;
+        }
+
+        .sss{
+            border:none;
+            background-color:#303a40;
+            float:right;
+            color:white;
+            position:relative;
+            right:27px;
+            padding-right:60px;
+            height: 50px;
+            width:200px;
+        }
+        select option{
+            font-weight:bold;
+        }
+        .b{
+            width:47px;
+            height:50px;
+            background-color:#303a40;
+            float:left;
+        }
+        .c{
+            width:47px;
+            height:50px;
+            background-color:#303a40;
+            float:left;
+        }
+        .d{
+            width:80px;
+            height:50px;
+            background-color:#303a40;
+            float:left;
+        }
+        .top div:hover{
+            color:white;
+            font-weight:bold;
+            background-color:#4cbffb;
+        }
+        /*顶部样式*/
+        /*左边样式*/
+        .text{
+            width:204px;
+            height:40px;
+            /*background-color:;*/
+            border:none;
+            font-weight:bold;
+            font-size:20px;
+            background:url(928.png) no-repeat 10% 50% #fafafa;
+        }
+        .div-1{
+            width:203px;
+            height: 55px;
+            border:1px solid #eaebec;
+            line-height:55px;
+            text-align:center;
+            font-weight:bold;
+            font-size:18px;
+        }
+        span div{
+            width:204px;
+            height: 40px;
+            font-weight:bold;
+            line-height:40px;
+            text-indent:2em;
+
+        }
+        span div:hover{
+            background-color:#fbb74c;
+            color:white;
+        }
+        span a{
+            color:black;
+        }
+        /*左边*/
+        /*右边*/
+        .div-8{
+            height: 50px;
+            width:80px;
+            border-bottom:3px solid #fbb74c;
+            line-height:65px;
+            margin-left:20px;
+            font-weight:bold;
+        }
+        .div-9{
+            width:940px;
+            height:35px;
+            margin-left:20px;
+            font-weight:bold;
+            line-height:53px;
+            margin-top:-1px;
+            border-top:1px solid #eaebec;
+        }
+        .a1{
+            margin-left:80px;
+        }
+        .a2{
+            position:relative;
+            left:150px;
+        }
+        .a3{
+            position:relative;
+            left:330px;
+        }
+        .a4{
+            float:right;
+            margin-right:100px;
+        }
+        .div-10{
+            width:940px;
+            height: 190px;
+            margin-left:20px;
+            border-bottom:1px dashed #eaebec;
+        }
+        .div-11{
+            width:120px;
+            height: 120px;
+            border:1px solid #eaebec;
+            margin-left:50px;
+            margin-top:20px;
+            background:url(huawei.png) no-repeat 10% 10%;
+            float:left;
+        }
+        .div-12{
+            width: 35px;
+            height: 20px;
+            /*margin-top:15px;*/
+            /*margin-left:93px;*/
+            font-weight:bold;
+            position:relative;
+            top:150px;
+            left:90px;
+            font-size:15px;
+        }
+        .div-13{
+            width:240px;
+            height:50px;
+            float:left;
+            font-size:14px;
+            text-align:center;
+            line-height:25px;
+            color:#fbb74c;
+            margin-top:25px;
+            margin-left:70px;
+            font-weight:bold;
+        }
+        .div-14{
+            width:130px;
+            height:35px;
+            float:left;
+            font-size:14px;
+            text-align:center;
+            line-height:35px;
+            color:#fbb74c;
+            margin-top:22px;
+            margin-left:70px;
+            font-weight:bold;
+        }
+        .div-15{
+            width:160px;
+            height:85px;
+            float:left;
+            font-size:14px;
+            text-align:center;
+            line-height:25px;
+            color:#fbb74c;
+            margin-top:25px;
+            margin-left:70px;
+            font-weight:bold;
+        }
+        .div-16{
+            height:150px;
+            width:940px;
+            /*margin-top:30px;*/
+            text-align:center;
+            clear:both;
+            line-height:150px;
+        }
+        .bb{
+            width:24px;
+            background-color:#ffffff;
+            border:1px solid #e1e1e1;
+            color:#9f9f9d;
+            height: 22px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="b">首页</div>
+        <div class="c">公司</div>
+        <div class="d">我的简历</div>
+        <select name="" id="" class="sss">
+            <option value="">364164860..</option>
+            <option value="0">我的简历</option>
+            <option value="1">我的面试</option>
+            <option value="2">收到的消息</option>
+            <option value="3">修改密码</option>
+            <option value="4">关注的企业</option>
+            <option value="5">收藏的职位</option>
+            <option value="6">退出</option>
+        </select>
+    </div>
+        <div class="middle">
+            <div class="baoguo">
+                <div class="left">
+                    <a href="">
+                        <button class="text">个人中心</button>
+                    </a>
+                    <div class="div-1">1359***3285</div>
+                     <span>
+
+                            <div class="div-2"><a href="">我的面试</a></div>
+                            <div class="div-3"><a href="../day07/我的简历.html">我的简历</a></div>
+                            <div class="div-4"><a href="../day07/收到的消息.html">收到的信息</a></div>
+                            <div class="div-5"><a href="../day07/修改密码.html">修改密码</a></div>
+                            <div class="div-6"><a href="../day07/关注的企业.html">关注的企业</a></div>
+                            <div class="div-7"><a href="../day06/职业收藏.html">收藏的职位</a></div>
+
+                     </span>
+                </div>
+                <div class="right">
+                    <div class="div-8">我的面试</div>
+                    <div class="div-9">
+                        <span class="a1">公司名称</span>
+                        <span class="a2">面试时间/地点</span>
+                        <span class="a3">状态</span>
+                        <span class="a4">操作</span>
+                    </div>
+                    <div class="div-10">
+                        <div class="div-11"></div>
+                        <div class="div-12">
+                            <p style="position:relative;top:-138px;">华为</p>
+                        </div>
+                        <div class="div-13">
+                            <p>2015-09-18 14:30:00</p>
+                            <p>中国深圳市龙岗区坂田街道华为基地</p>
+                        </div>
+                        <div class="div-14">
+                            <p>预约成功</p>
+                        </div>
+                        <div class="div-15">
+                            <p>发送预约号至手机</p>
+                            <p>查看预约号</p>
+                            <p>取消预约</p>
+                        </div>
+                    </div>
+                    <div class="div-10">
+                        <div class="div-11"></div>
+                        <div class="div-12">
+                            <p style="position:relative;top:-138px;">华为</p>
+                        </div>
+                        <div class="div-13">
+                            <p>2015-09-18 14:30:00</p>
+                            <p>中国深圳市龙岗区坂田街道华为基地</p>
+                        </div>
+                        <div class="div-14">
+                            <p>预约成功</p>
+                        </div>
+                        <div class="div-15">
+                            <p>发送预约号至手机</p>
+                            <p>查看预约号</p>
+                            <p>取消预约</p>
+                        </div>
+                    </div>
+                    <div class="div-10">
+                        <div class="div-11"></div>
+                        <div class="div-12">
+                            <p style="position:relative;top:-138px;">华为</p>
+                        </div>
+                        <div class="div-13">
+                            <p>2015-09-18 14:30:00</p>
+                            <p>中国深圳市龙岗区坂田街道华为基地</p>
+                        </div>
+                        <div class="div-14">
+                            <p>预约成功</p>
+                        </div>
+                        <div class="div-15">
+                            <p>发送预约号至手机</p>
+                            <p>查看预约号</p>
+                            <p>取消预约</p>
+                        </div>
+                    </div>
+                    <div class="div-16">
+                        <button class="aa" style="color:#e1e1e1;">上一页</button>
+                        <button class="bb" style="background-color:#fbb74c;color:white;">1</button>
+                        <button class="bb">2</button>
+                        <button class="bb">3</button>
+                        <span style="color:#9f9f9d;" >..</span>
+                        <button class="bb">6</button>
+                        <button class="aa">下一页</button>
+                    </div>
+                </div>
+         </div>
+        </div>
+    <div class="bottom">
+        <span class="a">网站备案号:粤ICP备11089314 经营许可证:粤ICP备 11089314<br>
+            <a href="" style="color:white;">All Rights Reserved</a>
+        </span>
+    </div>
+</body>
+</html>

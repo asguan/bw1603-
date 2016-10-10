@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改密码</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        a{
+            text-decoration:none;
+        }
+        .top{
+            height: 50px;
+            background:url(117.png) no-repeat 3% 10% #303a40;
+        }
+        .middle{
+            height: 830px;
+        }
+        .middle .left {
+            width: 204px;
+            height: 794px;
+            border: 1px solid #eaebec;
+            /*浮动*/
+            float: left;
+        }
+        .middle .right{
+            width: 980px;
+            height: 794px;
+            border: 1px solid #eaebec;
+            /*浮动*/
+            float: right;
+        }
+        .middle .baoguo{
+            width: 1200px;
+            height: 790px;
+
+            /*水平居中*/
+            margin: 0 auto;
+            /*相对定位*/
+            position: relative;
+            top: 20px;
+            left: 0;
+        }
+        /*顶部样式*/
+        .top div{
+            color:white;
+            line-height:50px;
+            padding-left:18px;
+            position:relative;
+            left:235px;
+        }
+
+        select{
+            border:none;
+            background-color:#303a40;
+            float:right;
+            color:white;
+            position:relative;
+            right:27px;
+            padding-right:60px;
+            height: 50px;
+            width:200px;
+        }
+        select option{
+            font-weight:bold;
+        }
+        .b{
+            width:47px;
+            height:50px;
+            background-color:#303a40;
+            float:left;
+        }
+        .c{
+            width:47px;
+            height:50px;
+            background-color:#303a40;
+            float:left;
+        }
+        .d{
+            width:80px;
+            height:50px;
+            background-color:#303a40;
+            float:left;
+        }
+        .top div:hover{
+            color:white;
+            font-weight:bold;
+            background-color:#4cbffb;
+        }
+        /*顶部样式*/
+        /*左边样式*/
+        .text{
+            width:204px;
+            height:40px;
+            /*background-color:;*/
+            border:none;
+            font-weight:bold;
+            font-size:20px;
+            background:url(928.png) no-repeat 10% 50% #fafafa;
+        }
+        .div-1{
+            width:203px;
+            height: 55px;
+            border:1px solid #eaebec;
+            line-height:55px;
+            text-align:center;
+            font-weight:bold;
+            font-size:18px;
+        }
+        span div{
+            width:204px;
+            height: 40px;
+            font-weight:bold;
+            line-height:40px;
+            text-indent:2em;
+
+        }
+        span div:hover{
+            background-color:#fbb74c;
+            color:white;
+        }
+        span a{
+            color:black;
+        }
+        /*左边样式完*/
+        /*底部样式*/
+        .bottom{
+            height: 194px;
+            background-color: #091c30;
+            text-align:center;
+            color:white;
+            font-size:10px;
+        }
+        .a{
+            position:relative;
+            top:80px;
+        }
+        /*底部样式完*/
+        /*右边样式*/
+        .div-8{
+            height: 50px;
+            width:80px;
+            border-bottom:2px solid #fbb74c;
+            line-height:65px;
+            margin-left:5px;
+            font-weight:bold;
+        }
+        hr{
+            border:1px solid #eaebec;
+        }
+        .div-9{
+            width:300px;
+            height: 50px;
+            border:none;
+            margin-left:84px;
+            margin-top:40px;
+            line-height:50px;
+        }
+        .div-10{
+            width:300px;
+            height: 50px;
+            border:none;
+            margin-left:68px;
+            line-height:50px;
+        }
+        .div-11{
+            width:300px;
+            height: 50px;
+            border:none;
+            margin-left:84px;
+            line-height:50px;
+        }
+        .div-12{
+            width:300px;
+            height: 50px;
+            margin-left:68px;
+            line-height:50px;
+            border:none;
+        }
+        .div-13{
+            width:80px;
+            height:30px;
+            background-color:#4cbefa;
+            border:none;
+            margin-left:140px;
+            margin-top:15px;
+            color:white;
+        }
+        input{
+            border:none;
+        }
+    </style>
+</head>
+<body>
+        <div class="top">
+            <div class="b">首页</div>
+            <div class="c">公司</div>
+            <div class="d">我的简历</div>
+            <select name="" id="">
+                <option value="">364164860..</option>
+                <option value="0">我的简历</option>
+                <option value="1">我的面试</option>
+                <option value="2">收到的消息</option>
+                <option value="3">修改密码</option>
+                <option value="4">关注的企业</option>
+                <option value="5">收藏的职位</option>
+                <option value="6">退出</option>
+            </select>
+        </div>
+        <div class="middle">
+            <div class="baoguo">
+                <div class="right">
+                    <div class="div-8">修改密码</div>
+                    <hr>
+                    <div class="div-9">手机号 <input type="text" placeholder="请输入手机号码"></div>
+                    <div class="div-10">当前密码 <input type="password" class="" placeholder="请输入密码"></div>
+                    <div class="div-11">新密码 <input type="password" class="" placeholder="请输入新密码"></div>
+                    <div class="div-12">确认密码 <input type="password" placeholder="请再次确认密码"></div>
+                    <button class="div-13">提交</button>
+                </div>
+                <div class="left">
+                    <a href="">
+                        <button class="text">个人中心</button>
+                    </a>
+                    <div class="div-1">1359***3285</div>
+                    <span>
+                            <div class="div-2"><a href="../day08/我的面试.html">我的面试</a></div>
+                            <div class="div-3"><a href="我的简历.html">我的简历</a></div>
+                            <div class="div-4"><a href="收到的消息.html">收到的信息</a></div>
+                            <div class="div-5"><a href="修改密码.html">修改密码</a></div>
+                            <div class="div-6"><a href="关注的企业.html">关注的企业</a></div>
+                            <div class="div-7"><a href="../day06/职业收藏.html">收藏的职位</a></div>
+                     </span>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <span class="a">网站备案号:粤ICP备11089314 经营许可证:粤ICP备 11089314<br>
+                <a href="" style="color:white;">All Rights Reserved</a>
+            </span>
+        </div>
+</body>
+</html>
