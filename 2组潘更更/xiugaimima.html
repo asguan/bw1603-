@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改密码</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .toubu{
+            height: 50px;
+            background-color: #303a40;
+            line-height: 50px;
+        }
+        .it{
+            margin-left: 184px;
+        }
+        .shouye{
+            color:beige;
+            font-size:14px;
+            position:relative;
+            top:-18px;
+            left:51px;
+
+        }
+        .gongsi {
+            color: beige;
+            font-size:14px;
+            position:relative;
+            top: -17px;
+            left: 86px;
+        }
+        .jianli{
+            color:beige;
+            font-size:14px;
+            position:relative;
+            top:-17px;
+            left:116px;
+        }
+        .shuzi {
+            position:relative;
+            top:-5px;
+            left:788px;
+        }
+
+        .zhongbu{
+            width: 1200px;
+            height: 792px;
+            border: 1px solid white;
+            margin: 0 auto;
+            margin-top:20px;
+        }
+        .zhongbul{
+            width:200px ;
+            height: 792px;
+            border: 1px solid #e7e7e7;
+
+        }
+        .zhongbul li{
+            list-style:none;
+            line-height:45px;
+            font-weight: bolder;
+        }
+        .zhongbul .suoj{
+            text-indent:40px;
+        }
+        .zhongbul li:first-child{
+            background: url(images/rt_07.png) no-repeat 18px 11px;
+            text-align: center;
+            border-bottom: 1px solid #e7e7e7;
+            font-weight: bolder;
+        }
+        .zhongbul li:nth-child(2){
+            text-align: center;
+            border-bottom: 1px solid #e7e7e7 ;
+            font-weight: bolder;
+            height: 54px;
+            line-height: 54px;
+        }
+        .suoj.word{
+            background-color: #fbb74c;
+            color: #fffbf6;
+        }
+
+        .zhongbur{
+            width: 980px;
+            height: 790px;
+            border: 1px solid #e7e7e7;
+            float: right;
+            margin-top: -794px;
+            margin-left: 10px;
+        }
+
+        .zhongbur p{
+            position: relative ;
+            top:46px;
+            left:4px;
+            font-weight: bolder;
+        }
+        .zhongbur .huix{
+            width: 960px;
+            border-bottom: 1px solid #e7e7e7;
+            position: relative;
+            top:56px;
+            left: 5px;
+        }
+        .zhongbur .chx{
+            width: 80px;
+            border-bottom: 3px solid #ff9900;
+            position: relative;
+            top:54px;
+            left: 5px;
+        }
+        .zhongbur .ui{
+            width: 970px;
+            height: 170px;
+            border: 1px solid white;
+            margin-top: 126px;
+        }
+        .zhongbur .ui li{
+            height: 51px;
+            text-indent: 70px;
+            list-style: none;
+        }
+        .zhongbur button{
+            width: 80px;
+            height: 32px;
+            background-color:#4cbefa ;
+            color:white;
+            border: none;
+            position: relative;
+            top:30px;
+            left: 144px;
+            font-size: 15px;
+            font-weight: bolder;
+
+        }
+        .zhongbur .ui li:first-child{
+            text-indent: 86px;
+        }
+        .zhongbur .ui li:nth-child(3){
+            text-indent: 86px;
+        }
+
+        .zhongburb ul li{
+            list-style: none;
+        }
+        .zhongburbl ul {
+            margin-top: 16px;
+        }
+        .zhongburbl ul li span:first-child{
+            color:#fbb74c;
+            font-weight: bolder;
+            font-size: 22px;
+        }
+        .zhongburbl ul li span:nth-child(2){
+            font-size: 22px;
+            font-weight: bolder;
+            color:#fd5f39;
+        }
+        .zhongburbl ul li:nth-child(2){
+            font-size: 19px;
+            margin: 15px 0px;
+            color:#5a5a5a;
+        }
+        .zhongburbl a{
+            text-decoration: none;
+            color: black;
+        }
+        .zhongburbl ul li:nth-child(3){
+            font-size: 19px;
+            color:#8d8d8d;
+        }
+        .zhongburbr ul {
+            margin-top: 16px;
+        }
+        .zhongburbr ul li:first-child{
+            color: #a8a2a6;
+            margin-left: 8px;
+        }
+        .zhongburbr ul li:nth-child(2){
+            font-size: 19px;
+            color:#fbb74c;
+            margin-top: 60px;
+            margin-left: 46px;
+        }
+        .suoj a{
+            text-decoration:none;
+            /*border: 1px solid #f0f0f0;*/
+            padding: 4px 5px;
+            font-size: 14px;
+            color: black;
+        }
+        .zhongbur a:nth-child(2){
+            color:white;
+            background-color: #fbb74c;
+        }
+        .zhongbur a:nth-child(5){
+            border:none;
+            position: relative;
+            top:-2px;
+            left:0px;
+        }
+
+        .bottom{
+            height: 200px;
+            background: #091c30;
+            margin-top: 20px;
+        }
+        .bottom span{
+            color: white;
+            font-size: 13px;
+            position: relative;
+            top: 94px;
+            left: 624px;
+        }
+
+
+
+    </style>
+</head>
+<body style="overflow-x: hidden">
+<div class="toubu">
+    <img class="it" src="images/it_02.png">
+    <span class="shouye">首页</span>
+    <span class="gongsi">公司</span>
+    <span class="jianli">我的简历</span>
+    <img class="shuzi" src="images/shuzi_03.png">
+</div>
+<div class="zhongbu">
+    <div class="zhongbul">
+        <ul>
+            <li>个人中心</li>
+            <li>1359***3285</li>
+            <li class="suoj"><a href="http://localhost:63342/2%E7%BB%84%E6%BD%98%E6%9B%B4%E6%9B%B4.v2.0/wodemianshi.html?_ijt=81lbmfjovj1q4k4dhung4vj7ls" target="_blank">我的面试</a></li>
+            <li class="suoj"><a href="http://localhost:63342/2%E7%BB%84%E6%BD%98%E6%9B%B4%E6%9B%B4.v2.0/my%20jianli.html?_ijt=81lbmfjovj1q4k4dhung4vj7ls" target="_blank">我的简历</a></li>
+            <li class="suoj"><a href="http://localhost:63342/2%E7%BB%84%E6%BD%98%E6%9B%B4%E6%9B%B4.v2.0/shoudaodexiaoxi.html?_ijt=81lbmfjovj1q4k4dhung4vj7ls" target="_blank">收到的消息</a></li>
+            <li class="suoj"><a href="http://localhost:63342/2%E7%BB%84%E6%BD%98%E6%9B%B4%E6%9B%B4.v2.0/xiugaimima.html?_ijt=81lbmfjovj1q4k4dhung4vj7ls" target="_blank">修改密码</a></li>
+            <li class="suoj"><a href="http://localhost:63342/2%E7%BB%84%E6%BD%98%E6%9B%B4%E6%9B%B4.v2.0/guanzhu%20de%20qiye.html?_ijt=qb74b8pkh3m6udvqrafhd7gfvg" target="_blank">关注的企业</a></li>
+            <li class="suoj word"><a href="http://localhost:63342/2%E7%BB%84%E6%BD%98%E6%9B%B4%E6%9B%B4.v2.0/shoucangzhiwei.html?_ijt=qb74b8pkh3m6udvqrafhd7gfvg" target="_blank">收藏的职位</a></li>
+            <li class="suoj"><a href="#" >投递的简历</a></li>
+        </ul>
+
+    </div>
+
+    <div class="zhongbur">
+        <p>修改密码</p>
+        <div class="huix"></div>
+        <div class="chx"></div>
+        <div class="ui">
+            <ul>
+
+                <li>手机号</li>
+                <li>当前密码</li>
+                <li>新密码</li>
+                <li>确认密码</li>
+
+            </ul>
+        </div>
+        <button>提交</button>
+
+
+
+
+
+    </div>
+</div>
+
+<div class="bottom">
+    <span>网站备案号:粤ICP备11089314经营许可证:粤ICP11089314</span>
+</div>
+
+
+</body>
+</html>
