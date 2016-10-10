@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .top{
+            height: 50px;
+            background:url(images/008.png) no-repeat 3% 10% #303a40;
+        }
+        .top span{
+            color:white;
+            line-height:50px;
+            padding-left:40px;
+            position:relative;
+            left:210px;
+        }
+        .middle{
+            height: 1760px;
+        }
+        .middle .mwrap{
+            width: 1136px;
+            height: 1300px;
+
+            /*水平居中*/
+            margin: 0 auto;
+            /*相对定位*/
+            position: relative;
+            top: 20px;
+            left: 0;
+
+        }
+        /*.middle .left{*/
+        /*width: 204px;*/
+        /*height: 794px;*/
+        /*border: 1px solid #eaebec;*/
+        /*!*浮动*!*/
+        /*!*float: left;*!*/
+
+        /*}*/
+        /*.middle .right{*/
+        /*width: 980px;*/
+        /*height: 794px;*/
+        /*border: 1px solid #e7e7e7;*/
+        /*!*浮动*!*/
+        /*!*float: right;*!*/
+        /*display: inline-block;*/
+        /*}*/
+        .bottom{
+            height: 194px;
+            background-color: #303a40;
+            text-align:center;
+            color:white;
+            font-size:10px;
+        }
+        select {
+            border: none;
+            background-color: #303a40;
+            float: right;
+            color: white;
+            position: relative;
+            right: 27px;
+            top: 16px;
+        }
+        .c{
+            line-height: 167px;
+            padding-top:10px;
+            width:1261px;
+            clear:both;
+        }
+        .d{
+            width:1261px;
+        }
+        .cp1 {
+            height: 240px;
+            width: 1295px;
+            background-color: #e9f1f4;
+            margin: -20px -96px;
+        }
+        .cp2{
+            width: 140px;
+            height: 139px;
+            /* border: 1px solid red; */
+            /* display: inline-block; */
+            position: relative;
+            top: 44px;
+            left: 201px;
+            background-color: white;
+            border-right:1px solid#eaeaea;
+
+        }
+        .cp3{
+            width: 820px;
+            height: 142px;
+            /*border: 1px solid red;*/
+            /* display: inline-block; */
+            margin-left: 341px;
+            margin-top: -95px;
+        }
+        .cp4{
+            width: 820px;
+            height: 82px;
+            /*border: 1px solid red;*/
+            background-color: white;
+        }
+        .cp02{width: 820px;
+            height: 57px;
+            /*border: 1px solid red;*/
+            background-color:#fafafa;
+
+        }
+        .cp6{
+            position: relative;
+            top: 10px;
+            left: 4px;
+        }
+        .cp7{
+            position: relative;
+            top: 10px;;
+            left: 10px;
+        }
+        .cp8{
+            position: relative;
+            top: 14px;
+            left: 10px;
+        }
+        .cp9{
+            position: relative;
+            top: 9px;
+            left: 10px;
+        }
+        .cp01{
+            position:relative;
+            top: 15px;
+            left: 20px;
+        }
+        .cp5{
+            padding-right: 37px;
+            position:relative;
+            top: -3px;
+            font-size: 18px;
+
+        }
+        .cp03{
+            width: 95px;
+            height: 47px;
+            /* border: 1px solid red; */
+            line-height: 47px;
+            font-size: 23px;
+            position: relative;
+            top: 6px;
+            left: 199px;
+            border-bottom: 1px solid #fbb74c;
+        }
+        .z1{
+            width: 1000px;
+            height: 260px;
+            /*border: 1px solid red;*/
+            margin-left: 100px;
+        }
+        .z2{
+            height: 60px;
+            /*border: 1px solid blue;*/
+            padding-top: 30px;
+        }
+        .z3{
+            width: 100px;
+            height: 60px;
+            /*border: 1px solid blue;*/
+            text-align: center;
+            line-height: 60px;
+        }
+        .z4{
+            width: 570px;
+            height: 30px;
+            border-bottom:1px solid #e8e8e8 ;
+            margin:-57px 130px;
+        }
+        .z5{
+            height: 190px;
+            width: 285px;
+            /*border: 1px solid blue;*/
+            float: left;
+            margin: 86px 0px;
+            background-image: url("images/008.png");
+
+
+
+
+        }
+        .z6{
+            height: 190px;
+            width: 400px;
+            /* border: 1px solid blue; */
+            margin: 86px 0px;
+            float: left;
+            margin-left: 17px;
+            text-indent: 25px;
+        }
+        .z6 .z7{
+            font-size: 13px;
+            line-height: 28px;
+            font-family: 微软雅黑;
+            /*clear:both;*/
+        }
+        .z3 .z8{
+            font-size: 22px;
+        }
+        .h1{
+            font-weight:bolder;
+        }
+        .h1 span {
+            position: relative;
+            top:7px;}
+
+        .h2  img {
+            margin: 40px 35px;
+        }
+        .h4{
+            margin-top: 60px;
+            font-weight:bolder;
+        }
+        .h5 img{
+            margin-top: 21px
+        }
+        .h5  ul li {
+            list-style: none;
+            line-height: 30px;
+            position: relative;
+            top: -113px;
+            left: 30px;
+            font-weight: bolder;
+        }
+        .h6{
+            margin-top: 37px;
+        }
+        .h6 button{
+            background-color: white;
+            font-family: 微软雅黑;
+            color:#8d8d8d;
+            border:1px solid #dddddd;
+            margin: 5px 7px;
+        }
+        .h8{
+            width: 280px;
+            height: 890px;
+            /* float: right; */
+            /*position: 38px;*/
+            /*float-right: 31px;*/
+            float: left;
+            margin-top: -222px;
+            margin-left: 40px;
+            border-left: 2px solid #e8e8e8;
+            padding-left: 11px;
+            padding-top: 30px;
+        }
+        .zhong1{
+            border: 1px solid red;
+            width: 700px;
+            height: 1220px;
+            margin-top: 38px;
+            margin-left: 100px;
+            /*clear:both;*/
+        }
+        .zhong2-1{
+            border: 1px solid red;
+            width: 78px;
+            height: 38px;
+        }
+        .zhong2-2{
+            border-top: 1px solid #e8e8e8;
+            width: 620px;
+            position: relative;
+            top: -20px;
+            left: 80px;
+        }
+        .zhong2-3{
+            width: 698px;
+            height: 80px;
+            border: 1px solid red;
+            background-color: #fafafa;
+            margin-top:6px;
+        }
+        .zhong2-3 button {
+            position: relative;
+            top: -606px;
+            left: 1px;
+            display: inline;
+            margin: 5px 2px;
+            line-height: 28px;
+        }
+        .zhong2-3 button{
+            width: 56px;
+            height: 25px;
+            /*border:1px solid red;*/
+            background-color: #fafafa;
+            border:none;
+            font-size: 14px;
+            font-family: 微软雅黑;
+            /*font-weight:bolder;*/
+        }
+        .zhong2-3 button:hover{
+            /*color:white;*/
+            background-color:#fbb74c;}
+        .zhong2-4 {
+            width: 698px;
+            height: 80px;
+            border: 1px solid red;
+            margin-top:20px;
+        }
+        .zhong2-5 {
+            position: relative;
+            top: -496px;
+            left: 8px;
+            color: #fcd196;
+        }
+        .zhong2-6{
+            position: relative;
+            top: -488px;
+            left: 444px;
+        }
+        .zhong2-7{
+            position: relative;
+            top: -478px;
+            left: 7px;
+        }
+        .zhong2-8{
+            position: relative;
+            top: -478px;
+            left: 32px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="top">
+    <span>首页</span><span>公司</span><span>我的简历</span>
+    <select name="" id="">
+        <option value="0">364164860..</option>
+    </select>
+</div>
+<div class="middle">
+    <div class="mwrap">
+        <div class="cp1">
+            <div class="cp2">
+                <img src="images/logo.png" alt="" class="cp01">
+            </div>
+            <div class="cp3">
+                <div class="cp4">
+                    <img src="images/tianjia.jpg" alt="">
+                </div>
+                <div class="cp02">
+                    <span class="cp5"><img src="images/dian_03.jpg" alt="" class="cp6"> 电子商务</span>
+                    <span class="cp5"><img src="images/bluan_03.jpg" alt="" class="cp7">　B轮</span>
+                    <span class="cp5"><img src="images/ren_03.jpg" alt="" class="cp8">　500-2000人</span>
+                    <span class="cp5"><img src="images/shen_03.jpg" alt="" class="cp9">　深圳-福田区</span>
+                </div>
+
+            </div>
+            <div class="cp03">公司主页</div>
+
+        </div>
+        <div class="z1">
+            <div class="z2">
+                <div class="z3"><span class="z8">公司介绍</span> </div>
+                <div class="z4"></div>
+                <div class="z5"></div>
+                <div class="z6">
+                <span class="z7">
+                目前，卷皮在北京、深圳、武汉分别设有办公地点。汇集了来自互联网行业和电商领域的精英力量，随着公司和团队的高速增长，始终期待创业同道的加入。卷皮创始人兼CEO。2007年，黄承松被保送进入华中科技大学。大学期间，黄承松主要靠写程序来挣学费和生活费，再也没有向家里要过一分钱 。2012年9月在武汉成立卷皮，目前公司规模已经超过千人。2015年3月入选福布斯2015年中国“30位30岁以下创业者”。
+            </span>
+                </div>
+            </div>
+        </div>
+        <div class="h8">
+            <div class="h1">管理团队 <span><img src="images/xian_03.png" alt=""> </span>  </div>
+            <div class="h2"><img src="images/tuoxiang_03.png" alt=""></div>
+            <div class="h3"><img src="images/tuoxiang_03 (3).png" alt=""></div>
+            <div class="h4">公司标签 <span><img src="images/xian_03.png" alt=""> </span>  </div>
+            <div class="h6">
+                <button>绩效奖金</button>
+                <button>定期体检</button>
+                <button>五险一金</button>
+                <button>岗位晋升</button>
+                <button>绩效奖金</button>
+                <button>年度旅游</button>
+            </div>
+            <div class="h5">
+                <img src="tuoxiang_03 (2).png" alt="">
+                <ul>
+                    <li>公司介绍</li>
+                    <li>发展历程</li>
+                    <li>招聘岗位</li>
+                </ul>
+            </div>
+        </div>
+        <div class="zhong1">
+            <div class="zhong2-1"><span style="position: relative;top: -648px;left: 8px;}">招聘职位</span></div>
+            <div class="zhong2-2"></div>
+            <div class="zhong2-3">
+                <button>职位 　:</button>
+                <button style="background-color:#fbb74c;">全部</button>
+                <button>后端开发</button>
+                <button>移动开发</button>
+                <button>前端开发</button>
+                <button style="width:32px;">测试</button>
+                <button style="width:32px;">运维</button>
+                <button style="width:32px;">DBA</button>
+                <button>高端职位</button>
+                <button>项目管理</button>
+                <button>硬件开发</button>
+                <button style="position:relative;left:70px;">企业软件</button>
+            </div>
+            <div class="zhong2-4">
+                <p><span class="zhong2-5">PHP开发[深圳]</span><span class="zhong2-6">2015-09-22 发布</span></p>
+                <span class="zhong2-7">8K-15K</span> <span class="zhong2-8">经验3-5年/大专/全职</span>
+            </div>
+            <div class="zhong2-4">
+                <p><span class="zhong2-5">PHP开发[深圳]</span><span class="zhong2-6">2015-09-22 发布</span></p>
+                <span class="zhong2-7">8K-15K</span> <span class="zhong2-8">经验3-5年/大专/全职</span>
+            </div>
+            <div class="zhong2-4">
+                <p><span class="zhong2-5">PHP开发[深圳]</span><span class="zhong2-6">2015-09-22 发布</span></p>
+                <span class="zhong2-7">8K-15K</span> <span class="zhong2-8">经验3-5年/大专/全职</span>
+            </div>
+            <div class="zhong2-4">
+                <p><span class="zhong2-5">PHP开发[深圳]</span><span class="zhong2-6">2015-09-22 发布</span></p>
+                <span class="zhong2-7">8K-15K</span> <span class="zhong2-8">经验3-5年/大专/全职</span>
+            </div>
+            <div class="zhong2-4">
+                <p><span class="zhong2-5">PHP开发[深圳]</span><span class="zhong2-6">2015-09-22 发布</span></p>
+                <span class="zhong2-7">8K-15K</span> <span class="zhong2-8">经验3-5年/大专/全职</span>
+            </div>
+            <div class="zhong2-4">
+                <p><span class="zhong2-5">PHP开发[深圳]</span><span class="zhong2-6">2015-09-22 发布</span></p>
+                <span class="zhong2-7">8K-15K</span> <span class="zhong2-8">经验3-5年/大专/全职</span>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+<div class="bottom">
+    <p class="c">网站备案号:粤ICP备11089314 经营许可证:粤ICP备 11089314</p>
+    <p class="d">All Rights Reserved</p>
+</div>
+
+</body>
+</html>
