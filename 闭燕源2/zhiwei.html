@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>收藏的职位</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .toubu{
+            height: 50px;
+            background-color: #303a40;
+            line-height: 50px;
+        }
+        .it{
+            margin-left: 184px;
+        }
+        .shouye{
+            color:beige;
+            font-size:14px;
+            position:relative;
+            top:-18px;
+            left:51px;
+
+        }
+        .gongsi {
+            color: beige;
+            font-size:14px;
+            position:relative;
+            top: -17px;
+            left: 86px;
+        }
+        .jianli{
+            color:beige;
+            font-size:14px;
+            position:relative;
+            top:-17px;
+            left:116px;
+        }
+        .shuzi {
+            position:relative;
+            top:-5px;
+            left:788px;
+        }
+
+        .zhongbu{
+            width: 1200px;
+            height: 792px;
+            border: 1px solid white;
+            margin: 0 auto;
+            margin-top:20px;
+        }
+        .zhongbul{
+            width:200px ;
+            height: 792px;
+            border: 1px solid #e7e7e7;
+
+
+        }
+        .zhongbul li{
+            list-style:none;
+            line-height:45px;
+            font-weight: bolder;
+        }
+        .zhongbul .suoj{
+            text-indent:40px;
+        }
+        .zhongbul li:first-child{
+            background: url(images/rt_07.png) no-repeat 18px 11px;
+            text-align: center;
+            border-bottom: 1px solid #e7e7e7;
+            font-weight: bolder;
+        }
+        .zhongbul li:nth-child(2){
+            text-align: center;
+            border-bottom: 1px solid #e7e7e7 ;
+            font-weight: bolder;
+            height: 54px;
+            line-height: 54px;
+        }
+        .suoj.word{
+            background-color: #fbb74c;
+            color: #fffbf6;
+        }
+
+        .zhongbur{
+            width: 980px;
+            height: 790px;
+            border: 1px solid #e7e7e7;
+            float: right;
+            margin-top: -794px;
+            margin-left: 10px;
+        }
+        .sczw{
+            font-weight:bolder;
+            font-size:15px;
+            position: relative;
+            top:20px;
+            left: 20px;
+        }
+        .huanxian{
+            height: 30px;
+            width: 80px;
+            border-bottom: 2px solid #ff9900;
+            margin-left: 20px;
+        }
+        .zhongbura{
+            width: 938px;
+            height: 566px;
+            border: 1px solid white;
+            margin-left: 20px;
+        }
+        .huixian{
+            width: 842px;
+            border-top:1px solid #e7e7e7 ;
+            position: relative;
+            top:-1px;
+            left: 100px;
+        }
+        .zhongburb{
+            width: 936px;
+            height: 140px;
+            border: 1px solid white;
+            background: url("images/huawei.png") no-repeat 10px 20px;
+        }
+        .zhongburbl{
+            width: 254px;
+            height: 138px;
+            border: 1px solid white;
+            margin-left: 130px;
+        }
+        .zhongburbr{
+            width: 222px;
+            height: 132px;
+            border: 1px solid white;
+            float: right;
+            margin-top: -139px;
+
+
+        }
+        .zhongburb ul li{
+            list-style: none;
+        }
+        .zhongburbl ul {
+            margin-top: 16px;
+        }
+        .zhongburbl ul li span:first-child{
+            color:#fbb74c;
+            font-weight: bolder;
+            font-size: 22px;
+        }
+        .zhongburbl ul li span:nth-child(2){
+            font-size: 22px;
+            font-weight: bolder;
+            color:#fd5f39;
+        }
+        .zhongburbl ul li:nth-child(2){
+            font-size: 19px;
+            margin: 15px 0px;
+            color:#5a5a5a;
+        }
+        .zhongburbl ul li:nth-child(3){
+            font-size: 19px;
+            color:#8d8d8d;
+        }
+        .zhongburbr ul {
+            margin-top: 16px;
+        }
+        .zhongburbr ul li:first-child{
+            color: #a8a2a6;
+            margin-left: 8px;
+        }
+        .zhongburbr ul li:nth-child(2){
+            font-size: 19px;
+            color:#fbb74c;
+            margin-top: 60px;
+            margin-left: 46px;
+        }
+        .zhongburb .xuxian{
+            width:922px;
+            border-bottom: 2px dotted #e7e7e7;
+        }
+
+
+        .zhongbur .szk {
+            text-align: center;
+            position: relative;
+            top:42px;
+        }
+        .zhongbur a{
+            text-decoration:none;
+            border: 1px solid #f0f0f0;
+            padding: 4px 5px;
+            font-size: 12px;
+            color: #9f9f9d;
+        }
+        .zhongbur a:nth-child(2){
+            color:white;
+            background-color: #fbb74c;
+        }
+        .zhongbur a:nth-child(5){
+            border:none;
+            position: relative;
+            top:-2px;
+            left:0px;
+        }
+
+        .bottom{
+            height: 200px;
+            background: #091c30;
+            margin-top: 20px;
+        }
+        .bottom span{
+            color: white;
+            font-size: 13px;
+            position: relative;
+            top: 94px;
+            left: 624px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+<div class="toubu">
+    <img class="it" src="images/it_02.png">
+    <span class="shouye">首页</span>
+    <span class="gongsi">公司</span>
+    <span class="jianli">我的简历</span>
+    <img class="shuzi" src="images/shuzi_03.png">
+
+
+
+
+
+</div>
+
+<div class="zhongbu">
+
+    <div class="zhongbul">
+        <ul>
+            <li>个人中心</li>
+            <li>1359***3285</li>
+            <li class="suoj">我的面试</li>
+            <li class="suoj">我的简历</li>
+            <li class="suoj">收到的消息</li>
+            <li class="suoj">修改密码</li>
+            <li class="suoj">关注的企业</li>
+            <li class="suoj word">收藏的职位</li>
+            <li class="suoj">投递的简历</li>
+        </ul>
+
+    </div>
+
+    <div class="zhongbur">
+        <span class="sczw">收藏的职位</span>
+        <div class="huanxian"></div>
+
+        <div class="huixian"></div>
+        <div class="zhongbura">
+
+            <div class="zhongburb">
+                <div class="zhongburbl">
+                    <ul>
+                        <li> <span>PHP工程师</span><span>（8k-15k）</span></li>
+                        <li>华为/广州/1-3年/本科</li>
+                        <li>早九晚六,周末双休,加班补助</li>
+                    </ul>
+
+
+                </div>
+
+                <div class="zhongburbr">
+                    <ul>
+                        <li>发布时间:2015-05-21 13:35</li>
+                        <li>投递简历|取消收藏</li>
+                    </ul>
+
+
+                </div>
+                <div class="xuxian"></div>
+            </div>
+
+
+            <div class="zhongburb">
+                <div class="zhongburbl">
+                    <ul>
+                        <li> <span>PHP工程师</span><span>（8k-15k）</span></li>
+                        <li>华为/广州/1-3年/本科</li>
+                        <li>早九晚六,周末双休,加班补助</li>
+                    </ul>
+
+
+                </div>
+
+                <div class="zhongburbr">
+                    <ul>
+                        <li>发布时间:2015-05-21 13:35</li>
+                        <li>投递简历|取消收藏</li>
+                    </ul>
+
+
+                </div>
+                <div class="xuxian"></div>
+            </div>
+            <div class="zhongburb">
+                <div class="zhongburbl">
+                    <ul>
+                        <li> <span>PHP工程师</span><span>（8k-15k）</span></li>
+                        <li>华为/广州/1-3年/本科</li>
+                        <li>早九晚六,周末双休,加班补助</li>
+                    </ul>
+
+
+                </div>
+
+                <div class="zhongburbr">
+                    <ul>
+                        <li>发布时间:2015-05-21 13:35</li>
+                        <li>投递简历|取消收藏</li>
+                    </ul>
+
+
+                </div>
+                <div class="xuxian"></div>
+            </div>
+            <div class="zhongburb">
+                <div class="zhongburbl">
+                    <ul>
+                        <li> <span>PHP工程师</span><span>（8k-15k）</span></li>
+                        <li>华为/广州/1-3年/本科</li>
+                        <li>早九晚六,周末双休,加班补助</li>
+                    </ul>
+
+
+                </div>
+
+                <div class="zhongburbr">
+                    <ul>
+                        <li>发布时间:2015-05-21 13:35</li>
+                        <li>投递简历|取消收藏</li>
+                    </ul>
+
+
+                </div>
+                <div class="xuxian"></div>
+            </div>
+
+
+        </div>
+
+        <div class="szk">
+            <a href="">上一页</a>
+            <a href="">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">...</a>
+            <a href="">6</a>
+            <a href="">下一页</a>
+
+        </div>
+
+
+
+    </div>
+</div>
+
+<div class="bottom">
+    <span>网站备案号:粤ICP备11089314经营许可证:粤ICP11089314</span>
+</div>
+
+
+</body>
+</html>
