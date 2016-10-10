@@ -1,0 +1,86 @@
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .top{
+        height: 50px;
+        background-color: #303a40;color: white;line-height: 50px;
+    }
+     .top .twrap{
+         width: 1200px;
+         height: 48px;margin: 0 auto;
+         background: url("../images/zuoye2.png")no-repeat 1% 90%;
+     }
+     .top .twrap .tleft{
+         margin-left: 220px;
+     }
+     .top ul{
+         overflow: hidden;
+     }
+     .top li{
+         list-style: none;
+         float: left;
+         margin: 0px 40px;
+     }
+     .top .twrap .tright{position: relative; top:-50px;left: 1000px;
+         display: inline;
+     }
+    .middle{
+        height: 830px;
+    }
+    .mwrap{
+        width: 1200px;
+        height: 790px;
+        margin: 0 auto;
+        position: relative;top: 20px;left: 0px;
+    }
+    .middle .mleft{
+        width: 204px;
+        height: 794px;border: 1px solid #eaebec;
+        float: left;
+    }
+    .middle .mleft .suoj{
+        text-indent: 42px;line-height:50px;font-size: 18px;
+    }
+    .suoj a{
+        text-decoration: none;
+        color: black;
+    }
+    .middle .mleft .suoj:nth-child(5){background-color: #fbbc5d
+    }
+    .middle .mleft .geren{
+        font-weight: bolder;text-align: center;line-height: 50px;margin-top: 8px;
+        font-size: 18px;border-bottom: 1px solid #eaebec;
+    }
+    .middle .mleft img{position: relative;top: 8px;left: -28px}
+    .mwrap .mright{
+        width: 980px;
+        height: 794px;border: 1px solid #eaebec;float: right;
+    }
+    .mwrap .mright img{
+        margin: 15px 10px;
+    }
+    .mwrap .mright .mima{
+        width: 940px;
+        height: 48px;font-size: 20px;border-bottom: dotted 1px #eaebec;}
+    .mright .diyiye{
+        /*border: 1px solid #f0f0f0;*/
+        padding: 3px 4px;font-size: 12px;color: #9f9f9d;
+        text-align: center;
+        margin: 30px 0px ;
+    }
+    .mright .diyiye a{
+        text-decoration: none;
+    }
+    .mright a:nth-child(2){
+        background-color: #fbb74c;color: white;
+    }
+    .mright a:nth-child(5){
+        border: none; position: relative;top: -5px;left: 4px;
+    }
+    .bottom{
+        height: 194px;background-color: #303a40;}
+    .bottom p{
+        font-size: 8px;color: white;text-align: center;
+        position: relative;top: 55px;left:10px
+    }
