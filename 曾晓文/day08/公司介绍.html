@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>公司介绍</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        /*顶部*/
+        .top{
+            height: 50px;
+            background:url(117.png) no-repeat 3% 10% #303a40;
+        }
+        .top div{
+            color:white;
+            line-height:50px;
+            padding-left:18px;
+            position:relative;
+            left:235px;
+        }
+        .b{
+            width:47px;
+            height:50px;
+            background-color:#303a40;
+            float:left;
+        }
+        .c{
+            width:47px;
+            height:50px;
+            background-color:#303a40;
+            float:left;
+        }
+        .d{
+            width:80px;
+            height:50px;
+            background-color:#303a40;
+            float:left;
+        }
+        .e{
+            float:right;
+            color:white;
+            position:relative;
+            top:15px;
+            right:30px;
+        }
+        .top div:hover{
+            color:white;
+            font-weight:bold;
+            background-color:#4cbffb;
+        }
+        /*顶部*/
+        /*第二个顶部top2*/
+        .top2{
+            height: 240px;
+            background-color:#e9f1f4;
+        }
+        .top2-1{
+            width:170px;
+            height:170px;
+            border:1px solid #e9f1f4;
+            background:#ffffff;
+            position:relative;
+            top:20px;
+            left:32px;
+            float:left;
+        }
+        .top2-2{
+            width:1030px;
+            height: 100px;
+            border:1px solid #e9f1f4;
+            background:#ffffff;
+            position:relative;
+            float:left;
+            top:20px;
+            left:31px;
+        }
+        .top2-3{
+            width:1030px;
+            height: 70px;
+            /*border:1px solid #e9f1f4;*/
+            position:relative;
+            top:121px;
+            left:204px;
+            background-color:#fafafa;
+        }
+        .top2-4{
+            width:77px;
+            height:50px;
+            background-color:#e9f1f4;
+            /*position:relative;*/
+            /*top:120px;*/
+            /*left:33px;*/
+            /*border:1px solid red;*/
+            border-bottom:3px solid #fbb74c;
+            margin-top:117px;
+            margin-left:32px;
+            text-align:center;
+            line-height:50px;
+        }
+        .div2-1-1{
+            width:65px;
+            height:65px;
+            background:url(jm.png) no-repeat 10% 10%;
+            margin-top:40px;
+            margin-left:50px;
+        }
+        .div2-1-2{
+            width:120px;
+            height: 30px;
+            background:url(sj6.png) no-repeat 10% 10%;
+            margin-left:20px;
+        }
+        .top2-2 p{
+            position:relative;
+            top:20px;
+            left:40px;
+            font-weight:bold;
+            font-size:23px;
+        }
+        .div2-2-1{
+            width:60px;
+            height: 20px;
+            background-color:#dbdbda;
+            color:white;
+            float:left;
+            margin-left:-30px;
+            margin-top:30px;
+            font-size:14px;
+            line-height:20px;
+            text-align:center;
+        }
+        .div2-2-2{
+            width:60px;
+            height: 20px;
+            background-color:#fbb74c;
+            color:white;
+            float:left;
+            margin-left:15px;
+            margin-top:30px;
+            font-size:14px;
+            line-height:20px;
+            text-align:center;
+        }
+        .top2-3 span{
+            position:relative;
+            top:-84px;
+            left:-127px;
+            padding-left:40px;
+        }
+        .top2-3 img{
+            position:relative;
+            top:3px;
+        }
+
+        /*最大中框*/
+        .middle{
+            height:1714px;
+            /*background-color:blue;*/
+        }
+        /*包裹中框*/
+        .middle .baoguo {
+            width: 1200px;
+            height: 1695px;
+            margin: 0 auto;
+            position: relative;
+            top: 20px;
+            left: 0;
+        }
+        /*左边框*/
+        .middle .left {
+            width:905px;
+            height: 1695px;
+            border-right:3px solid #eaebec;
+            /*border: 1px solid #eaebec;*/
+            /*浮动*/
+            float: left;
+        }
+        /*右边框*/
+        .middle .right{
+            width:290px;
+            height:650px;
+            /*border: 1px solid #eaebec;*/
+            /*浮动*/
+            float: right;
+        }
+        /*底框架*/
+        .bottom{
+            height: 80px;
+            background-color:#f6f6f6;
+            line-height:80px;
+            text-align:center;
+            color:#999999;
+            font-size:14px;
+        }
+        /*左边样式~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~·*/
+        .div1{
+            width:875px;
+            height:250px;
+            /*border:1px solid yellow;*/
+        }
+        .div2{
+            width:875px;
+            height: 130px;
+            margin-top:5px;
+        }
+        .div3{
+            width:875px;
+            height:1150px;
+            /*border:1px solid yellow;*/
+            margin-top:20px;
+        }
+        /*公司介绍*/
+        .div1-1{
+            width:75px;
+            height:25px;
+            /*border:1px solid yellow;*/
+            font-size:18px;
+            font-weight:bold;
+            line-height:33px;
+            display:inline;
+        }
+        .div1-2{
+            width:800px;
+            border-bottom:1px solid #e8e8e8;
+            position:relative;
+            top:-18px;
+            left:75px;
+        }
+        .div1-3{
+            width:300px;
+            height: 180px;
+            border:1px solid #e8e8e8;
+            background:url(gaunggao.png) no-repeat 10% 10%;
+            margin-top:10px;
+            float:left;
+        }
+        .div1-4{
+            width:535px;
+            height: 180px;
+            /*border:1px solid #e8e8e8;*/
+            /*position:relative;*/
+            float:left;
+            margin-top:10px;
+            margin-left:35px;
+            text-indent: 2em;
+            font-size:15px;
+        }
+        /*招聘位置的样式*/
+        .div2-1{
+            width:75px;
+            height:25px;
+            /*border:1px solid yellow;*/
+            font-size:18px;
+            font-weight:bold;
+            line-height:33px;
+            display:inline;
+        }
+        .div2-2{
+            width:800px;
+            border-bottom:1px solid #e8e8e8;
+            position:relative;
+            top:-18px;
+            left:75px;
+
+        }
+        .div2-3{
+            width:873px;
+            height:86px;
+            border:1px solid #e8e8e8;
+            margin-top:15px;
+            background-color:#fafafa;
+        }
+        .div2-3 div{
+            width:50px;
+            height: 22px;
+            font-size:12px;
+            font-weight:bold;
+            float:left;
+            margin-top:15px;
+            margin-left:25px;
+            text-align:center;
+            line-height:22px;
+        }
+        .div2-3 div:hover{
+            color:white;
+            background-color:#fbb74c;
+        }
+        /*职位主体*/
+        .div4{
+            width:873px;
+            height:86px;
+            border:1px solid #e8e8e8;
+            border-left:3px solid #fbb74c;
+            margin-top:20px;
+        }
+        .div4:hover{
+            background:#fafafa;
+        }
+        .div4-1{
+            color:#fbb74c;
+            font-size:20px;
+            font-weight:bold;
+            padding-left:17px;
+            position:relative;
+            top:16px;
+        }
+        .div4-2{
+            color:#999999;
+            float:right;
+            font-size:14px;
+            font-weight:bold;
+            padding-right:30px;
+            position:relative;
+            top:16px;
+        }
+        .div4-3{
+            color:#fd5f39;
+            font-size:18px;
+            font-weight:bold;
+            padding-left:17px;
+            position:relative;
+            top:30px;
+        }
+        .div4-4{
+            color:#333333;
+            font-size:12px;
+            font-weight:bold;
+            padding-left:13px;
+            position:relative;
+            top:28px;
+        }
+        /*翻页样式*/
+        .div-10{
+            height: 60px;
+            width:940px;
+            margin-top:30px;
+            text-align:center;
+        }
+        .bb{
+            width:24px;
+            background-color:#ffffff;
+            border:1px solid #e1e1e1;
+            color:#9f9f9d;
+            height: 22px;
+        }
+        /*右边样式*/
+        .diva{
+            width:288px;
+            height: 360px;
+            /*border:1px solid red;*/
+        }
+        .divb{
+            width:288px;
+            height:290px;
+            /*border:1px solid red;*/
+        }
+        .diva-1{
+            width:75px;
+            height:25px;
+            /*border:1px solid yellow;*/
+            font-size:18px;
+            font-weight:bold;
+            line-height:33px;
+            display:inline;
+            position:relative;
+            top:25px;
+            margin-left:30px;
+        }
+        .diva-2{
+            width:160px;
+            border-bottom:1px solid #e8e8e8;
+            position:relative;
+            top:5px;
+            left:128px;
+        }
+        .diva-3{
+            width:170px;
+            height: 140px;
+            /*border:1px solid red;*/
+            background:url(touxiang.png) no-repeat 10% 10% blue;
+            margin-left:60px;
+            margin-top:50px;
+        }
+        .diva-4{
+            width:287px;
+            height: 20px;
+            /*border:1px solid red;*/
+            text-align:center;
+        }
+        .diva-5{
+            width:287px;
+            height: 20px;
+            /*border:1px solid red;*/
+            text-align:center;
+            font-size:13px;
+            line-height:30px;
+            color:#999999;
+        }
+        .diva-6{
+            width:75px;
+            border-bottom:1px solid #e8e8e8;
+            position:relative;
+            top:50px;
+            left:26px;
+            float:left;
+        }
+        .diva-7{
+            width:22px;
+            height: 22px;
+            border:1px solid #e8e8e8;
+            float:left;
+            text-align:center;
+            margin-left:43px;
+            margin-top:40px;
+        }
+        .diva-8{
+            width:22px;
+            height: 22px;
+            border:1px solid #e8e8e8;
+            float:left;
+            text-align:center;
+            margin-left:20px;
+            margin-top:40px;
+        }
+        .diva-9{
+            width:75px;
+            border-bottom:1px solid #e8e8e8;
+            position:relative;
+            top:50px;
+            left:27px;
+            float:left;
+        }
+        /*第二个*/
+        .divb-1{
+            width:75px;
+            height:25px;
+            /*border:1px solid yellow;*/
+            font-size:18px;
+            font-weight:bold;
+            line-height:33px;
+            display:inline;
+            position:relative;
+            top:25px;
+            margin-left:30px;
+        }
+        .divb-2{
+            width:160px;
+            border-bottom:1px solid #e8e8e8;
+            position:relative;
+            top:5px;
+            left:128px;
+        }
+        .diva11{
+            width:260px;
+            height: 100px;
+            margin-top:35px;
+            margin-left:20px;
+        }
+        .div111{
+            width:70px;
+            height: 27px;
+            border:1px solid #e8e8e8;
+            float:left;
+            margin-top:10px;
+            margin-left:10px;
+            text-align:center;
+            line-height:27px;
+            font-size:13px;
+        }
+        .div111:hover{
+            background-color:#fafafa;
+        }
+        .divb-3{
+            width:85px;
+            height: 100px;
+            background:url(xian.png) no-repeat 0 10%;
+            margin-top:20px;
+            margin-left:30px;
+        }
+        .divb-3 p{
+            float:right;
+            line-height:33px;
+            font-size:15px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="b">首页</div>
+        <div class="c">公司</div>
+        <div class="d">我的简历</div>
+        <p class="e">登录|注册</div>
+    </div>
+    <div class="top2">
+        <div class="top2-1">
+            <div class="div2-1-1"></div>
+            <div class="div2-1-2"></div>
+        </div>
+        <div class="top2-2">
+            <p>卷皮</p>
+            <div class="div2-2-1">取消关注</div>
+            <div class="div2-2-2">+ 关注</div>
+        </div>
+        <div class="top2-3">
+            <span> <img src="fangkuang.png" alt="">电子商务</span>
+            <span> <img src="quxian.png" alt="">B轮</span>
+            <span> <img src="ren.png" alt="">500-2000人</span>
+            <span> <img src="dizhi.png" alt="">深圳-福田区</span>
+        </div>
+        <div class="top2-4">公司主页</div>
+    </div>
+    <div class="middle">
+         <div class="baoguo">
+            <div class="left">
+                <div class="div1">
+                    <div class="div1-1">公司介绍</div>
+                    <div class="div1-2"></div>
+                    <div class="div1-3"></div>
+                    <div class="div1-4">石昊为石氏古国皇亲家族，天生至尊，但寄养在石毅家中时被石毅及其母合谋夺取，嫁接在石毅之身，导致重病衰弱，被父母寄养在石村，喝百兽奶长大。稳住伤势后，石昊往第二祖地救出自己的替身石清风，一同进入补天阁修炼。后补天阁被毁，石昊返回石村，又往北海夺得鲲鹏宝术。不久后前往石国皇都，战雨族斩尊者扬名，获石皇册封“荒天候”，后成为石皇，为寻找更加强大的力量，来到了上界。</div>
+                </div>
+                <div class="div2">
+                    <div class="div2-1">招聘职位</div>
+                    <div class="div2-2"></div>
+                    <div class="div2-3">
+                        <div>职位：</div>
+                        <div>全部</div>
+                        <div>后端开发</div>
+                        <div>移动开发</div>
+                        <div>前端开发</div>
+                        <div>测试</div>
+                        <div>运维</div>
+                        <div>DBA</div>
+                        <div>高端职位</div>
+                        <div>项目管理</div>
+                        <div>硬件开发</div>
+                        <div>企业软件</div>
+                    </div>
+                </div>
+                <div class="div3">
+                    <div class="div4">
+                        <p><span class="div4-1">PHP开发[深圳]</span><span class="div4-2">2015-09-22 发布</span></p>
+                        <span class="div4-3">8K-15K</span> <span class="div4-4">经验3-5年/大专/全职</span>
+                    </div>
+                    <div class="div4">
+                        <p><span class="div4-1">PHP开发[深圳]</span><span class="div4-2">2015-09-22 发布</span></p>
+                        <span class="div4-3">8K-15K</span> <span class="div4-4">经验3-5年/大专/全职</span>
+                    </div>
+                    <div class="div4">
+                        <p><span class="div4-1">PHP开发[深圳]</span><span class="div4-2">2015-09-22 发布</span></p>
+                        <span class="div4-3">8K-15K</span> <span class="div4-4">经验3-5年/大专/全职</span>
+                    </div>
+                    <div class="div4">
+                        <p><span class="div4-1">PHP开发[深圳]</span><span class="div4-2">2015-09-22 发布</span></p>
+                        <span class="div4-3">8K-15K</span> <span class="div4-4">经验3-5年/大专/全职</span>
+                    </div>
+                    <div class="div4">
+                        <p><span class="div4-1">PHP开发[深圳]</span><span class="div4-2">2015-09-22 发布</span></p>
+                        <span class="div4-3">8K-15K</span> <span class="div4-4">经验3-5年/大专/全职</span>
+                    </div>
+                    <div class="div4">
+                        <p><span class="div4-1">PHP开发[深圳]</span><span class="div4-2">2015-09-22 发布</span></p>
+                        <span class="div4-3">8K-15K</span> <span class="div4-4">经验3-5年/大专/全职</span>
+                    </div>
+                    <div class="div4">
+                        <p><span class="div4-1">PHP开发[深圳]</span><span class="div4-2">2015-09-22 发布</span></p>
+                        <span class="div4-3">8K-15K</span> <span class="div4-4">经验3-5年/大专/全职</span>
+                    </div>
+                    <div class="div4">
+                        <p><span class="div4-1">PHP开发[深圳]</span><span class="div4-2">2015-09-22 发布</span></p>
+                        <span class="div4-3">8K-15K</span> <span class="div4-4">经验3-5年/大专/全职</span>
+                    </div>
+                    <div class="div4">
+                        <p><span class="div4-1">PHP开发[深圳]</span><span class="div4-2">2015-09-22 发布</span></p>
+                        <span class="div4-3">8K-15K</span> <span class="div4-4">经验3-5年/大专/全职</span>
+                    </div>
+                    <div class="div4">
+                        <p><span class="div4-1">PHP开发[深圳]</span><span class="div4-2">2015-09-22 发布</span></p>
+                        <span class="div4-3">8K-15K</span> <span class="div4-4">经验3-5年/大专/全职</span>
+                    </div>
+                    <div class="div-10">
+                        <button class="aa" style="color:#e1e1e1;">上一页</button>
+                        <button class="bb" style="background-color:#fbb74c;color:white;">1</button>
+                        <button class="bb">2</button>
+                        <button class="bb">3</button>
+                        <span style="color:#9f9f9d;" >..</span>
+                        <button class="bb">6</button>
+                        <button class="aa">下一页</button>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="diva">
+                    <div class="diva-1">管理团队</div>
+                    <div class="diva-2"></div>
+                    <div class="diva-3"></div>
+                    <div class="diva-4">黄承松</div>
+                    <div class="diva-5">创始人兼CEO</div>
+                    <div class="diva-6"></div>
+                    <div class="diva-7">&lt;</div>
+                    <div class="diva-8">&gt;</div>
+                    <div class="diva-9"></div>
+                </div>
+                <div class="divb">
+                    <div class="divb-1">管理团队</div>
+                    <div class="divb-2"></div>
+                    <div class="diva11">
+                        <div class="div111">绩效奖金</div>
+                        <div class="div111">定期体检</div>
+                        <div class="div111">五险一金</div>
+                        <div class="div111">岗位竞升</div>
+                        <div class="div111">绩效奖金</div>
+                        <div class="div111">年度旅游</div>
+                    </div>
+                    <div class="divb-3">
+                        <p>公司介绍</p>
+                        <p>发展历程</p>
+                        <p>招聘岗位</p>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+    <div class="bottom">
+        <p>网站备案号：粤ICP备 11089314 经营许可证：粤ICP备 11089314</p>
+    </div>
+</body>
+</html>
